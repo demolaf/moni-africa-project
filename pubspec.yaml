@@ -13,6 +13,9 @@ dependencies:
   # state management
   flutter_riverpod: ^1.0.3
 
+  # networking
+  dio: ^4.0.6
+
   # utilities
   flutter_svg: ^1.0.3
 
