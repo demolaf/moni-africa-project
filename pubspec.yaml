@@ -1,0 +1,46 @@
+name: moni_africa_project
+description: Take home assignment for Moni Africa
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: DMSans
+      fonts:
+        - asset: assets/fonts/dmsans/DMSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/dmsans/DMSans-BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/dmsans/DMSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/dmsans/DMSans-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/dmsans/DMSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/dmsans/DMSans-Italic.ttf
+          weight: 400
