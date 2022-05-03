@@ -11,12 +11,12 @@ class RecentLoan {
 
   RecentLoan(
       {this.id,
-        this.agentId,
-        this.clusterId,
-        this.agentLoanId,
-        this.loanAmount,
-        this.createdAt,
-        this.agentLoan});
+      this.agentId,
+      this.clusterId,
+      this.agentLoanId,
+      this.loanAmount,
+      this.createdAt,
+      this.agentLoan});
 
   RecentLoan.fromJson(Map<String, dynamic> json) {
     id = json['id'];

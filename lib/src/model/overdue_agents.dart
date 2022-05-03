@@ -12,13 +12,13 @@ class OverdueAgents {
 
   OverdueAgents(
       {this.id,
-        this.userId,
-        this.agentId,
-        this.clusterId,
-        this.statusId,
-        this.acceptedAt,
-        this.createdAt,
-        this.agent});
+      this.userId,
+      this.agentId,
+      this.clusterId,
+      this.statusId,
+      this.acceptedAt,
+      this.createdAt,
+      this.agent});
 
   OverdueAgents.fromJson(Map<String, dynamic> json) {
     id = json['id'];

@@ -12,13 +12,13 @@ class DueAgents {
 
   DueAgents(
       {this.id,
-        this.userId,
-        this.agentId,
-        this.clusterId,
-        this.statusId,
-        this.acceptedAt,
-        this.createdAt,
-        this.agent});
+      this.userId,
+      this.agentId,
+      this.clusterId,
+      this.statusId,
+      this.acceptedAt,
+      this.createdAt,
+      this.agent});
 
   DueAgents.fromJson(Map<String, dynamic> json) {
     id = json['id'];

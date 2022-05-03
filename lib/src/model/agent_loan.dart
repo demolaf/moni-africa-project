@@ -35,36 +35,36 @@ class AgentLoan {
 
   AgentLoan(
       {this.id,
-        this.agentId,
-        this.agentCreditScoreId,
-        this.loanId,
-        this.agentCardId,
-        this.interestType,
-        this.interestValue,
-        this.loanDurationType,
-        this.loanDuration,
-        this.loanDueDate,
-        this.daysPastDue,
-        this.loanAmount,
-        this.loanAmountDue,
-        this.loanInterestDue,
-        this.loanPaymentDate,
-        this.loanPaymentRate,
-        this.loanAmountPaid,
-        this.penaltyOutstanding,
-        this.penaltyPaid,
-        this.principalPaid,
-        this.principalOutstanding,
-        this.interestPaid,
-        this.interestOutstanding,
-        this.penaltyAmount,
-        this.loanStatus,
-        this.isMax,
-        this.statusId,
-        this.acceptTerms,
-        this.createdAt,
-        this.modifiedAt,
-        this.status});
+      this.agentId,
+      this.agentCreditScoreId,
+      this.loanId,
+      this.agentCardId,
+      this.interestType,
+      this.interestValue,
+      this.loanDurationType,
+      this.loanDuration,
+      this.loanDueDate,
+      this.daysPastDue,
+      this.loanAmount,
+      this.loanAmountDue,
+      this.loanInterestDue,
+      this.loanPaymentDate,
+      this.loanPaymentRate,
+      this.loanAmountPaid,
+      this.penaltyOutstanding,
+      this.penaltyPaid,
+      this.principalPaid,
+      this.principalOutstanding,
+      this.interestPaid,
+      this.interestOutstanding,
+      this.penaltyAmount,
+      this.loanStatus,
+      this.isMax,
+      this.statusId,
+      this.acceptTerms,
+      this.createdAt,
+      this.modifiedAt,
+      this.status});
 
   AgentLoan.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -100,7 +100,7 @@ class AgentLoan {
     createdAt = json['created_at'];
     modifiedAt = json['modified_at'];
     status =
-    json['status'] != null ? LoanStatus.fromJson(json['status']) : null;
+        json['status'] != null ? LoanStatus.fromJson(json['status']) : null;
   }
 
   Map<String, dynamic> toJson() {
