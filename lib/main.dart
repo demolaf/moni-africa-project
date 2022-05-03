@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moni_africa_project/src/ui/views/startup/startup_viewmodel.dart';
+import 'package:moni_africa_project/src/ui/views/startup/startup_view.dart';
 
 void main() {
   runApp(

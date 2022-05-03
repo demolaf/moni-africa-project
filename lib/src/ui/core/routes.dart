@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../views/startup/startup_viewmodel.dart';
+import '../views/startup/startup_view.dart';
 
 /// Routes
 class Routes {
