@@ -19,6 +19,7 @@ dependencies:
   # utilities
   flutter_svg: ^1.0.3
   simple_moment: ^1.1.1
+  logger: ^1.1.0
 
   flutter:
     sdk: flutter
