@@ -1,48 +1,23 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'agent.dart';
 
-class OverdueAgents {
-  String? id;
-  String? userId;
-  String? agentId;
-  String? clusterId;
-  int? statusId;
-  String? acceptedAt;
-  String? createdAt;
-  Agent? agent;
+part 'overdue_agents.freezed.dart';
+part 'overdue_agents.g.dart';
 
-  OverdueAgents(
-      {this.id,
-      this.userId,
-      this.agentId,
-      this.clusterId,
-      this.statusId,
-      this.acceptedAt,
-      this.createdAt,
-      this.agent});
+@freezed
+class OverdueAgents with _$OverdueAgents {
+  factory OverdueAgents({
+    @JsonKey(name: 'id') String? id,
+    @JsonKey(name: 'user_id') String? userId,
+    @JsonKey(name: 'agent_id') String? agentId,
+    @JsonKey(name: 'cluster_id') String? clusterId,
+    @JsonKey(name: 'status_id') int? statusId,
+    @JsonKey(name: 'accepted_at') String? acceptedAt,
+    @JsonKey(name: 'created_at') String? createdAt,
+    @JsonKey(name: 'agent') Agent? agent,
+  }) = _OverdueAgents;
 
-  OverdueAgents.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    userId = json['user_id'];
-    agentId = json['agent_id'];
-    clusterId = json['cluster_id'];
-    statusId = json['status_id'];
-    acceptedAt = json['accepted_at'];
-    createdAt = json['created_at'];
-    agent = json['agent'] != null ? Agent.fromJson(json['agent']) : null;
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['user_id'] = userId;
-    data['agent_id'] = agentId;
-    data['cluster_id'] = clusterId;
-    data['status_id'] = statusId;
-    data['accepted_at'] = acceptedAt;
-    data['created_at'] = createdAt;
-    if (agent != null) {
-      data['agent'] = agent!.toJson();
-    }
-    return data;
-  }
+  factory OverdueAgents.fromJson(Map<String, dynamic> json) =>
+      _$OverdueAgentsFromJson(json);
 }

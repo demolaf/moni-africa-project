@@ -1,46 +1,23 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'agent_loan.dart';
 
-class RecentLoan {
-  String? id;
-  String? agentId;
-  String? clusterId;
-  String? agentLoanId;
-  int? loanAmount;
-  String? createdAt;
-  AgentLoan? agentLoan;
+part 'recent_loan.freezed.dart';
 
-  RecentLoan(
-      {this.id,
-      this.agentId,
-      this.clusterId,
-      this.agentLoanId,
-      this.loanAmount,
-      this.createdAt,
-      this.agentLoan});
+part 'recent_loan.g.dart';
 
-  RecentLoan.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    agentId = json['agent_id'];
-    clusterId = json['cluster_id'];
-    agentLoanId = json['agent_loan_id'];
-    loanAmount = json['loan_amount'];
-    createdAt = json['created_at'];
-    agentLoan = json['agent_loan'] != null
-        ? AgentLoan.fromJson(json['agent_loan'])
-        : null;
-  }
+@freezed
+class RecentLoan with _$RecentLoan {
+  factory RecentLoan({
+    @JsonKey(name: 'id') String? id,
+    @JsonKey(name: 'agent_id') String? agentId,
+    @JsonKey(name: 'cluster_id') String? clusterId,
+    @JsonKey(name: 'agent_loan_id') String? agentLoanId,
+    @JsonKey(name: 'loan_amount') int? loanAmount,
+    @JsonKey(name: 'created_at') String? createdAt,
+    @JsonKey(name: 'agent_loan') AgentLoan? agentLoan,
+  }) = _RecentLoan;
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['agent_id'] = agentId;
-    data['cluster_id'] = clusterId;
-    data['agent_loan_id'] = agentLoanId;
-    data['loan_amount'] = loanAmount;
-    data['created_at'] = createdAt;
-    if (agentLoan != null) {
-      data['agent_loan'] = agentLoan!.toJson();
-    }
-    return data;
-  }
+  factory RecentLoan.fromJson(Map<String, dynamic> json) =>
+      _$RecentLoanFromJson(json);
 }

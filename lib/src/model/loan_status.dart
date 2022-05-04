@@ -1,36 +1,19 @@
-class LoanStatus {
-  int? id;
-  String? name;
-  String? label;
-  String? description;
-  String? createdAt;
-  String? modifiedAt;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  LoanStatus(
-      {this.id,
-        this.name,
-        this.label,
-        this.description,
-        this.createdAt,
-        this.modifiedAt});
+part 'loan_status.freezed.dart';
+part 'loan_status.g.dart';
 
-  LoanStatus.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    label = json['label'];
-    description = json['description'];
-    createdAt = json['created_at'];
-    modifiedAt = json['modified_at'];
-  }
+@freezed
+class LoanStatus with _$LoanStatus {
+  factory LoanStatus({
+    @JsonKey(name: 'id') int? id,
+    @JsonKey(name: 'name') String? name,
+    @JsonKey(name: 'label') String? label,
+    @JsonKey(name: 'description') String? description,
+    @JsonKey(name: 'created_at') String? createdAt,
+    @JsonKey(name: 'modified_at') String? modifiedAt,
+  }) = _LoanStatus;
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['name'] = name;
-    data['label'] = label;
-    data['description'] = description;
-    data['created_at'] = createdAt;
-    data['modified_at'] = modifiedAt;
-    return data;
-  }
+  factory LoanStatus.fromJson(Map<String, dynamic> json) =>
+      _$LoanStatusFromJson(json);
 }
