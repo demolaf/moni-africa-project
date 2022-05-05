@@ -9,10 +9,10 @@
 
 ## Screenshots
 <p float="left">
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%201.png" width="240" height="640"/>
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%202.png" width="240" height="640"/>
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%203.png" width="240" height="640"/>
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%204.png" width="240" height="640"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%201.png" width="320" height="640"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%202.png" width="320" height="640"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%203.png" width="320" height="640"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%204.png" width="320" height="640"/>
 </p>
 
 ## Preview
