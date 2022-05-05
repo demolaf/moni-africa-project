@@ -9,7 +9,7 @@ import '../../core/constants/api_base.dart';
 import 'api.dart';
 import 'failure.dart';
 
-/// Http Service Provider
+/// Api Service Provider
 final apiProvider = Provider<Api>(
   (ref) {
     return ApiImpl();
