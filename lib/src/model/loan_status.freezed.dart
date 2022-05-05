@@ -22,18 +22,24 @@ LoanStatus _$LoanStatusFromJson(Map<String, dynamic> json) {
 mixin _$LoanStatus {
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'name')
   String? get name => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'label')
   String? get label => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $LoanStatusCopyWith<LoanStatus> get copyWith =>
       throw _privateConstructorUsedError;
@@ -44,6 +50,7 @@ abstract class $LoanStatusCopyWith<$Res> {
   factory $LoanStatusCopyWith(
           LoanStatus value, $Res Function(LoanStatus) then) =
       _$LoanStatusCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'id') int? id,
       @JsonKey(name: 'name') String? name,
@@ -58,6 +65,7 @@ class _$LoanStatusCopyWithImpl<$Res> implements $LoanStatusCopyWith<$Res> {
   _$LoanStatusCopyWithImpl(this._value, this._then);
 
   final LoanStatus _value;
+
   // ignore: unused_field
   final $Res Function(LoanStatus) _then;
 
@@ -104,6 +112,7 @@ abstract class _$LoanStatusCopyWith<$Res> implements $LoanStatusCopyWith<$Res> {
   factory _$LoanStatusCopyWith(
           _LoanStatus value, $Res Function(_LoanStatus) then) =
       __$LoanStatusCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'id') int? id,
@@ -252,21 +261,27 @@ abstract class _LoanStatus implements LoanStatus {
   @override
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'name')
   String? get name => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'label')
   String? get label => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$LoanStatusCopyWith<_LoanStatus> get copyWith =>

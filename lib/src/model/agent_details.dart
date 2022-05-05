@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'agent.dart';
 
 part 'agent_details.freezed.dart';
-
 part 'agent_details.g.dart';
 
 @freezed

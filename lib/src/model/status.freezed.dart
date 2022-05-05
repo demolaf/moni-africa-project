@@ -22,18 +22,24 @@ Status _$StatusFromJson(Map<String, dynamic> json) {
 mixin _$Status {
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'name')
   String? get name => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'label')
   String? get label => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $StatusCopyWith<Status> get copyWith => throw _privateConstructorUsedError;
 }
@@ -42,6 +48,7 @@ mixin _$Status {
 abstract class $StatusCopyWith<$Res> {
   factory $StatusCopyWith(Status value, $Res Function(Status) then) =
       _$StatusCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'id') int? id,
       @JsonKey(name: 'name') String? name,
@@ -56,6 +63,7 @@ class _$StatusCopyWithImpl<$Res> implements $StatusCopyWith<$Res> {
   _$StatusCopyWithImpl(this._value, this._then);
 
   final Status _value;
+
   // ignore: unused_field
   final $Res Function(Status) _then;
 
@@ -101,6 +109,7 @@ class _$StatusCopyWithImpl<$Res> implements $StatusCopyWith<$Res> {
 abstract class _$StatusCopyWith<$Res> implements $StatusCopyWith<$Res> {
   factory _$StatusCopyWith(_Status value, $Res Function(_Status) then) =
       __$StatusCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'id') int? id,
@@ -247,21 +256,27 @@ abstract class _Status implements Status {
   @override
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'name')
   String? get name => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'label')
   String? get label => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'description')
   String? get description => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$StatusCopyWith<_Status> get copyWith => throw _privateConstructorUsedError;

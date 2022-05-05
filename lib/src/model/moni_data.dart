@@ -1,8 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'agent_details.dart';
 
 part 'moni_data.freezed.dart';
-
 part 'moni_data.g.dart';
 
 @freezed

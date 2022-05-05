@@ -22,26 +22,36 @@ MoniData _$MoniDataFromJson(Map<String, dynamic> json) {
 mixin _$MoniData {
   @JsonKey(name: 'cluster_purse_balance')
   int? get clusterPurseBalance => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'total_interest_earned')
   int? get totalInterestEarned => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'total_owed_by_members')
   int? get totalOwedByMember => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'overdue_agents')
   List<AgentDetails> get overdueAgents => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cluster_name')
   String? get clusterName => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cluster_repayment_rate')
   double? get clusterRepaymentRate => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cluster_repayment_day')
   String? get clusterRepaymentDay => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'due_agents')
   List<AgentDetails> get dueAgents => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'active_agents')
   List<AgentDetails> get activeAgents => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'inactive_agents')
   List<AgentDetails> get inactiveAgents => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $MoniDataCopyWith<MoniData> get copyWith =>
       throw _privateConstructorUsedError;
@@ -51,6 +61,7 @@ mixin _$MoniData {
 abstract class $MoniDataCopyWith<$Res> {
   factory $MoniDataCopyWith(MoniData value, $Res Function(MoniData) then) =
       _$MoniDataCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'cluster_purse_balance') int? clusterPurseBalance,
       @JsonKey(name: 'total_interest_earned') int? totalInterestEarned,
@@ -69,6 +80,7 @@ class _$MoniDataCopyWithImpl<$Res> implements $MoniDataCopyWith<$Res> {
   _$MoniDataCopyWithImpl(this._value, this._then);
 
   final MoniData _value;
+
   // ignore: unused_field
   final $Res Function(MoniData) _then;
 
@@ -134,6 +146,7 @@ class _$MoniDataCopyWithImpl<$Res> implements $MoniDataCopyWith<$Res> {
 abstract class _$MoniDataCopyWith<$Res> implements $MoniDataCopyWith<$Res> {
   factory _$MoniDataCopyWith(_MoniData value, $Res Function(_MoniData) then) =
       __$MoniDataCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'cluster_purse_balance') int? clusterPurseBalance,
@@ -258,6 +271,7 @@ class _$_MoniData implements _MoniData {
   final int? totalOwedByMember;
   @JsonKey(name: 'overdue_agents')
   final List<AgentDetails> _overdueAgents;
+
   @override
   @JsonKey(name: 'overdue_agents')
   List<AgentDetails> get overdueAgents {
@@ -276,6 +290,7 @@ class _$_MoniData implements _MoniData {
   final String? clusterRepaymentDay;
   @JsonKey(name: 'due_agents')
   final List<AgentDetails> _dueAgents;
+
   @override
   @JsonKey(name: 'due_agents')
   List<AgentDetails> get dueAgents {
@@ -285,6 +300,7 @@ class _$_MoniData implements _MoniData {
 
   @JsonKey(name: 'active_agents')
   final List<AgentDetails> _activeAgents;
+
   @override
   @JsonKey(name: 'active_agents')
   List<AgentDetails> get activeAgents {
@@ -294,6 +310,7 @@ class _$_MoniData implements _MoniData {
 
   @JsonKey(name: 'inactive_agents')
   final List<AgentDetails> _inactiveAgents;
+
   @override
   @JsonKey(name: 'inactive_agents')
   List<AgentDetails> get inactiveAgents {
@@ -386,33 +403,43 @@ abstract class _MoniData implements MoniData {
   @override
   @JsonKey(name: 'cluster_purse_balance')
   int? get clusterPurseBalance => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'total_interest_earned')
   int? get totalInterestEarned => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'total_owed_by_members')
   int? get totalOwedByMember => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'overdue_agents')
   List<AgentDetails> get overdueAgents => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cluster_name')
   String? get clusterName => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cluster_repayment_rate')
   double? get clusterRepaymentRate => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cluster_repayment_day')
   String? get clusterRepaymentDay => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'due_agents')
   List<AgentDetails> get dueAgents => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'active_agents')
   List<AgentDetails> get activeAgents => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'inactive_agents')
   List<AgentDetails> get inactiveAgents => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$MoniDataCopyWith<_MoniData> get copyWith =>

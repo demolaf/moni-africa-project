@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../model/agent.dart';
 import '../../../../../model/moni_data.dart';
 import '../../../../core/constants/component_sizes.dart';
 import '../../../../core/constants/strings.dart';

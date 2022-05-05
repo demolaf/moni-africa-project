@@ -36,6 +36,7 @@ class AppStrings {
   static const kGetNewCodeTextLink = 'Get new code';
   static const kClusterPurseSetting = 'Cluster purse setting';
   static const kFrequencyOfContribution = 'Frequency of contribution';
+
   static String kYourContributionAmount(int percent) =>
       'Your contribution is $percent% of your eligible amount';
   static const kBenefitsEarned = 'Benefits earned';

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:moni_africa_project/src/model/moni_data.dart';
 import 'package:moni_africa_project/src/ui/core/constants/strings.dart';
 
 import '../../../../core/constants/colors.dart';

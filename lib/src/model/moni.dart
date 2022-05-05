@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'moni_data.dart';
 
 part 'moni.freezed.dart';
-
 part 'moni.g.dart';
 
 @freezed

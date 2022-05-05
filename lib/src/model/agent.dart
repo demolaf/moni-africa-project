@@ -2,7 +2,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:moni_africa_project/src/model/recent_loan.dart';
 
 part 'agent.freezed.dart';
-
 part 'agent.g.dart';
 
 @freezed

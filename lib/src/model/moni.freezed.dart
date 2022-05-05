@@ -21,10 +21,13 @@ MoniApiResponse _$MoniApiResponseFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$MoniApiResponse {
   bool get success => throw _privateConstructorUsedError;
+
   String get message => throw _privateConstructorUsedError;
+
   MoniData get data => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $MoniApiResponseCopyWith<MoniApiResponse> get copyWith =>
       throw _privateConstructorUsedError;
@@ -35,6 +38,7 @@ abstract class $MoniApiResponseCopyWith<$Res> {
   factory $MoniApiResponseCopyWith(
           MoniApiResponse value, $Res Function(MoniApiResponse) then) =
       _$MoniApiResponseCopyWithImpl<$Res>;
+
   $Res call({bool success, String message, MoniData data});
 
   $MoniDataCopyWith<$Res> get data;
@@ -46,6 +50,7 @@ class _$MoniApiResponseCopyWithImpl<$Res>
   _$MoniApiResponseCopyWithImpl(this._value, this._then);
 
   final MoniApiResponse _value;
+
   // ignore: unused_field
   final $Res Function(MoniApiResponse) _then;
 
@@ -85,6 +90,7 @@ abstract class _$MoniApiResponseCopyWith<$Res>
   factory _$MoniApiResponseCopyWith(
           _MoniApiResponse value, $Res Function(_MoniApiResponse) then) =
       __$MoniApiResponseCopyWithImpl<$Res>;
+
   @override
   $Res call({bool success, String message, MoniData data});
 
@@ -187,10 +193,13 @@ abstract class _MoniApiResponse implements MoniApiResponse {
 
   @override
   bool get success => throw _privateConstructorUsedError;
+
   @override
   String get message => throw _privateConstructorUsedError;
+
   @override
   MoniData get data => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$MoniApiResponseCopyWith<_MoniApiResponse> get copyWith =>

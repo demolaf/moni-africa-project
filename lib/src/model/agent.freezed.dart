@@ -22,82 +22,120 @@ Agent _$AgentFromJson(Map<String, dynamic> json) {
 mixin _$Agent {
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'user_id')
   String? get userId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'moni_id')
   String? get moniId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'eligible_loan_id')
   String? get eligibleLoanId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'first_name')
   String? get firstName => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'middle_name')
   String? get middleName => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'last_name')
   String? get lastName => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'nickname')
   String? get nickname => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'birth_date')
   String? get birthDate => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'gender')
   String? get gender => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'business_name')
   String? get businessName => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'marital_status')
   String? get maritalStatus => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'education')
   String? get education => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'house_address')
   String? get houseAddress => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'shop_address')
   String? get shopAddress => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'lga')
   String? get lga => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'city')
   String? get city => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'state')
   String? get state => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'country')
   String? get country => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'phone_number')
   String? get phoneNumber => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'email_address')
   String? get emailAddress => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'bvn')
   String? get bvn => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'has_credit_history')
   int? get hasCreditHistory => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'verified')
   int? get verified => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'referral_link')
   String? get referralLink => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'media_url')
   String? get mediaUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'channel')
   String? get channel => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent_repayment_rate')
   int? get agentRepaymentRate => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'bvn_verified_after')
   int? get bvnVerifiedAfter => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'loan_enabled')
   int? get loanEnabled => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'status_id')
   int? get statusId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'eligible_loan_modified_at')
   String? get eligibleLoanModifiedAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cap_agent_loan')
   int? get capAgentLoan => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'loan_count')
   int? get loanCount => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'recent_loan')
   RecentLoan? get recentLoan => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'suspended')
   bool? get suspended => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $AgentCopyWith<Agent> get copyWith => throw _privateConstructorUsedError;
 }
@@ -106,6 +144,7 @@ mixin _$Agent {
 abstract class $AgentCopyWith<$Res> {
   factory $AgentCopyWith(Agent value, $Res Function(Agent) then) =
       _$AgentCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'id')
           String? id,
@@ -192,6 +231,7 @@ class _$AgentCopyWithImpl<$Res> implements $AgentCopyWith<$Res> {
   _$AgentCopyWithImpl(this._value, this._then);
 
   final Agent _value;
+
   // ignore: unused_field
   final $Res Function(Agent) _then;
 
@@ -408,6 +448,7 @@ class _$AgentCopyWithImpl<$Res> implements $AgentCopyWith<$Res> {
 abstract class _$AgentCopyWith<$Res> implements $AgentCopyWith<$Res> {
   factory _$AgentCopyWith(_Agent value, $Res Function(_Agent) then) =
       __$AgentCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'id')
@@ -1065,117 +1106,155 @@ abstract class _Agent implements Agent {
   @override
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'user_id')
   String? get userId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'moni_id')
   String? get moniId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'eligible_loan_id')
   String? get eligibleLoanId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'first_name')
   String? get firstName => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'middle_name')
   String? get middleName => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'last_name')
   String? get lastName => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'nickname')
   String? get nickname => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'birth_date')
   String? get birthDate => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'gender')
   String? get gender => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'business_name')
   String? get businessName => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'marital_status')
   String? get maritalStatus => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'education')
   String? get education => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'house_address')
   String? get houseAddress => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'shop_address')
   String? get shopAddress => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'lga')
   String? get lga => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'city')
   String? get city => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'state')
   String? get state => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'country')
   String? get country => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'phone_number')
   String? get phoneNumber => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'email_address')
   String? get emailAddress => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'bvn')
   String? get bvn => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'has_credit_history')
   int? get hasCreditHistory => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'verified')
   int? get verified => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'referral_link')
   String? get referralLink => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'media_url')
   String? get mediaUrl => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'channel')
   String? get channel => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent_repayment_rate')
   int? get agentRepaymentRate => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'bvn_verified_after')
   int? get bvnVerifiedAfter => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'loan_enabled')
   int? get loanEnabled => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'status_id')
   int? get statusId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'eligible_loan_modified_at')
   String? get eligibleLoanModifiedAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cap_agent_loan')
   int? get capAgentLoan => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'loan_count')
   int? get loanCount => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'recent_loan')
   RecentLoan? get recentLoan => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'suspended')
   bool? get suspended => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$AgentCopyWith<_Agent> get copyWith => throw _privateConstructorUsedError;

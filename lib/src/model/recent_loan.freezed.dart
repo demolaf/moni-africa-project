@@ -22,20 +22,27 @@ RecentLoan _$RecentLoanFromJson(Map<String, dynamic> json) {
 mixin _$RecentLoan {
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent_id')
   String? get agentId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cluster_id')
   String? get clusterId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent_loan_id')
   String? get agentLoanId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'loan_amount')
   int? get loanAmount => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent_loan')
   AgentLoan? get agentLoan => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $RecentLoanCopyWith<RecentLoan> get copyWith =>
       throw _privateConstructorUsedError;
@@ -46,6 +53,7 @@ abstract class $RecentLoanCopyWith<$Res> {
   factory $RecentLoanCopyWith(
           RecentLoan value, $Res Function(RecentLoan) then) =
       _$RecentLoanCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'id') String? id,
       @JsonKey(name: 'agent_id') String? agentId,
@@ -63,6 +71,7 @@ class _$RecentLoanCopyWithImpl<$Res> implements $RecentLoanCopyWith<$Res> {
   _$RecentLoanCopyWithImpl(this._value, this._then);
 
   final RecentLoan _value;
+
   // ignore: unused_field
   final $Res Function(RecentLoan) _then;
 
@@ -125,6 +134,7 @@ abstract class _$RecentLoanCopyWith<$Res> implements $RecentLoanCopyWith<$Res> {
   factory _$RecentLoanCopyWith(
           _RecentLoan value, $Res Function(_RecentLoan) then) =
       __$RecentLoanCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'id') String? id,
@@ -289,24 +299,31 @@ abstract class _RecentLoan implements RecentLoan {
   @override
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent_id')
   String? get agentId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cluster_id')
   String? get clusterId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent_loan_id')
   String? get agentLoanId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'loan_amount')
   int? get loanAmount => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent_loan')
   AgentLoan? get agentLoan => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$RecentLoanCopyWith<_RecentLoan> get copyWith =>

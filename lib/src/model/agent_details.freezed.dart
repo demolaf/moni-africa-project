@@ -22,22 +22,30 @@ AgentDetails _$AgentDetailsFromJson(Map<String, dynamic> json) {
 mixin _$AgentDetails {
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'user_id')
   String? get userId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent_id')
   String? get agentId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'cluster_id')
   String? get clusterId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'status_id')
   int? get statusId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'accepted_at')
   String? get acceptedAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'agent')
   Agent? get agent => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $AgentDetailsCopyWith<AgentDetails> get copyWith =>
       throw _privateConstructorUsedError;
@@ -48,6 +56,7 @@ abstract class $AgentDetailsCopyWith<$Res> {
   factory $AgentDetailsCopyWith(
           AgentDetails value, $Res Function(AgentDetails) then) =
       _$AgentDetailsCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(name: 'id') String? id,
       @JsonKey(name: 'user_id') String? userId,
@@ -66,6 +75,7 @@ class _$AgentDetailsCopyWithImpl<$Res> implements $AgentDetailsCopyWith<$Res> {
   _$AgentDetailsCopyWithImpl(this._value, this._then);
 
   final AgentDetails _value;
+
   // ignore: unused_field
   final $Res Function(AgentDetails) _then;
 
@@ -134,6 +144,7 @@ abstract class _$AgentDetailsCopyWith<$Res>
   factory _$AgentDetailsCopyWith(
           _AgentDetails value, $Res Function(_AgentDetails) then) =
       __$AgentDetailsCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(name: 'id') String? id,
@@ -310,27 +321,35 @@ abstract class _AgentDetails implements AgentDetails {
   @override
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'user_id')
   String? get userId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent_id')
   String? get agentId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'cluster_id')
   String? get clusterId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'status_id')
   int? get statusId => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'accepted_at')
   String? get acceptedAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(name: 'agent')
   Agent? get agent => throw _privateConstructorUsedError;
+
   @override
   @JsonKey(ignore: true)
   _$AgentDetailsCopyWith<_AgentDetails> get copyWith =>

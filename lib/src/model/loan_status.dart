@@ -1,7 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'loan_status.freezed.dart';
-
 part 'loan_status.g.dart';
 
 @freezed
