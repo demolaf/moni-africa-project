@@ -1,6 +1,6 @@
 # Moni Africa Flutter Mobile Engineer Test
 
-### Here's the link to download the [APK](https://github.com/demolaf/moni-africa-project/blob/dev/RELEASE_APK/app-release.apk "APK file")
+### Here's the link to download the [APK](https://github.com/demolaf/moni-africa-project/raw/dev/RELEASE_APK/app-release.apk "APK file")
 
 ### Features
  - State management technique used > Riverpod
