@@ -16,5 +16,5 @@
 </p>
 
 ## Preview
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="480" height="1080"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="320" height="640"/>
 
