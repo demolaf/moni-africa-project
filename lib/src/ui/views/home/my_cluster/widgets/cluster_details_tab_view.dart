@@ -12,8 +12,9 @@ import 'group_settings.dart';
 import 'loan_settings.dart';
 
 class ClusterDetailsTabView extends StatelessWidget {
-  final MoniData? moniData;
-  const ClusterDetailsTabView({Key? key, this.moniData}) : super(key: key);
+  final MoniData moniData;
+  const ClusterDetailsTabView({Key? key, required this.moniData})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

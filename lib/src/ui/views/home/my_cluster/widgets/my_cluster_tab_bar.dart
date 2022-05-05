@@ -8,10 +8,8 @@ import '../../../../core/constants/component_sizes.dart';
 import '../../../../core/constants/text_styles.dart';
 
 class MyClusterTabBar extends StatelessWidget {
-  final MoniData? moniData;
   const MyClusterTabBar({
     Key? key,
-    this.moniData,
   }) : super(key: key);
 
   @override

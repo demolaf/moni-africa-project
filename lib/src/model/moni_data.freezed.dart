@@ -27,7 +27,7 @@ mixin _$MoniData {
   @JsonKey(name: 'total_owed_by_members')
   int? get totalOwedByMember => throw _privateConstructorUsedError;
   @JsonKey(name: 'overdue_agents')
-  List<AgentDetails>? get overdueAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get overdueAgents => throw _privateConstructorUsedError;
   @JsonKey(name: 'cluster_name')
   String? get clusterName => throw _privateConstructorUsedError;
   @JsonKey(name: 'cluster_repayment_rate')
@@ -35,11 +35,11 @@ mixin _$MoniData {
   @JsonKey(name: 'cluster_repayment_day')
   String? get clusterRepaymentDay => throw _privateConstructorUsedError;
   @JsonKey(name: 'due_agents')
-  List<AgentDetails>? get dueAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get dueAgents => throw _privateConstructorUsedError;
   @JsonKey(name: 'active_agents')
-  List<AgentDetails>? get activeAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get activeAgents => throw _privateConstructorUsedError;
   @JsonKey(name: 'inactive_agents')
-  List<AgentDetails>? get inactiveAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get inactiveAgents => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -55,13 +55,13 @@ abstract class $MoniDataCopyWith<$Res> {
       {@JsonKey(name: 'cluster_purse_balance') int? clusterPurseBalance,
       @JsonKey(name: 'total_interest_earned') int? totalInterestEarned,
       @JsonKey(name: 'total_owed_by_members') int? totalOwedByMember,
-      @JsonKey(name: 'overdue_agents') List<AgentDetails>? overdueAgents,
+      @JsonKey(name: 'overdue_agents') List<AgentDetails> overdueAgents,
       @JsonKey(name: 'cluster_name') String? clusterName,
       @JsonKey(name: 'cluster_repayment_rate') double? clusterRepaymentRate,
       @JsonKey(name: 'cluster_repayment_day') String? clusterRepaymentDay,
-      @JsonKey(name: 'due_agents') List<AgentDetails>? dueAgents,
-      @JsonKey(name: 'active_agents') List<AgentDetails>? activeAgents,
-      @JsonKey(name: 'inactive_agents') List<AgentDetails>? inactiveAgents});
+      @JsonKey(name: 'due_agents') List<AgentDetails> dueAgents,
+      @JsonKey(name: 'active_agents') List<AgentDetails> activeAgents,
+      @JsonKey(name: 'inactive_agents') List<AgentDetails> inactiveAgents});
 }
 
 /// @nodoc
@@ -101,7 +101,7 @@ class _$MoniDataCopyWithImpl<$Res> implements $MoniDataCopyWith<$Res> {
       overdueAgents: overdueAgents == freezed
           ? _value.overdueAgents
           : overdueAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       clusterName: clusterName == freezed
           ? _value.clusterName
           : clusterName // ignore: cast_nullable_to_non_nullable
@@ -117,15 +117,15 @@ class _$MoniDataCopyWithImpl<$Res> implements $MoniDataCopyWith<$Res> {
       dueAgents: dueAgents == freezed
           ? _value.dueAgents
           : dueAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       activeAgents: activeAgents == freezed
           ? _value.activeAgents
           : activeAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       inactiveAgents: inactiveAgents == freezed
           ? _value.inactiveAgents
           : inactiveAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
     ));
   }
 }
@@ -139,13 +139,13 @@ abstract class _$MoniDataCopyWith<$Res> implements $MoniDataCopyWith<$Res> {
       {@JsonKey(name: 'cluster_purse_balance') int? clusterPurseBalance,
       @JsonKey(name: 'total_interest_earned') int? totalInterestEarned,
       @JsonKey(name: 'total_owed_by_members') int? totalOwedByMember,
-      @JsonKey(name: 'overdue_agents') List<AgentDetails>? overdueAgents,
+      @JsonKey(name: 'overdue_agents') List<AgentDetails> overdueAgents,
       @JsonKey(name: 'cluster_name') String? clusterName,
       @JsonKey(name: 'cluster_repayment_rate') double? clusterRepaymentRate,
       @JsonKey(name: 'cluster_repayment_day') String? clusterRepaymentDay,
-      @JsonKey(name: 'due_agents') List<AgentDetails>? dueAgents,
-      @JsonKey(name: 'active_agents') List<AgentDetails>? activeAgents,
-      @JsonKey(name: 'inactive_agents') List<AgentDetails>? inactiveAgents});
+      @JsonKey(name: 'due_agents') List<AgentDetails> dueAgents,
+      @JsonKey(name: 'active_agents') List<AgentDetails> activeAgents,
+      @JsonKey(name: 'inactive_agents') List<AgentDetails> inactiveAgents});
 }
 
 /// @nodoc
@@ -186,7 +186,7 @@ class __$MoniDataCopyWithImpl<$Res> extends _$MoniDataCopyWithImpl<$Res>
       overdueAgents: overdueAgents == freezed
           ? _value.overdueAgents
           : overdueAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       clusterName: clusterName == freezed
           ? _value.clusterName
           : clusterName // ignore: cast_nullable_to_non_nullable
@@ -202,15 +202,15 @@ class __$MoniDataCopyWithImpl<$Res> extends _$MoniDataCopyWithImpl<$Res>
       dueAgents: dueAgents == freezed
           ? _value.dueAgents
           : dueAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       activeAgents: activeAgents == freezed
           ? _value.activeAgents
           : activeAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
       inactiveAgents: inactiveAgents == freezed
           ? _value.inactiveAgents
           : inactiveAgents // ignore: cast_nullable_to_non_nullable
-              as List<AgentDetails>?,
+              as List<AgentDetails>,
     ));
   }
 }
@@ -226,7 +226,7 @@ class _$_MoniData implements _MoniData {
       @JsonKey(name: 'total_owed_by_members')
           this.totalOwedByMember,
       @JsonKey(name: 'overdue_agents')
-          final List<AgentDetails>? overdueAgents,
+          final List<AgentDetails> overdueAgents = const [],
       @JsonKey(name: 'cluster_name')
           this.clusterName,
       @JsonKey(name: 'cluster_repayment_rate')
@@ -234,11 +234,11 @@ class _$_MoniData implements _MoniData {
       @JsonKey(name: 'cluster_repayment_day')
           this.clusterRepaymentDay,
       @JsonKey(name: 'due_agents')
-          final List<AgentDetails>? dueAgents,
+          final List<AgentDetails> dueAgents = const [],
       @JsonKey(name: 'active_agents')
-          final List<AgentDetails>? activeAgents,
+          final List<AgentDetails> activeAgents = const [],
       @JsonKey(name: 'inactive_agents')
-          final List<AgentDetails>? inactiveAgents})
+          final List<AgentDetails> inactiveAgents = const []})
       : _overdueAgents = overdueAgents,
         _dueAgents = dueAgents,
         _activeAgents = activeAgents,
@@ -257,14 +257,12 @@ class _$_MoniData implements _MoniData {
   @JsonKey(name: 'total_owed_by_members')
   final int? totalOwedByMember;
   @JsonKey(name: 'overdue_agents')
-  final List<AgentDetails>? _overdueAgents;
+  final List<AgentDetails> _overdueAgents;
   @override
   @JsonKey(name: 'overdue_agents')
-  List<AgentDetails>? get overdueAgents {
-    final value = _overdueAgents;
-    if (value == null) return null;
+  List<AgentDetails> get overdueAgents {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_overdueAgents);
   }
 
   @override
@@ -277,36 +275,30 @@ class _$_MoniData implements _MoniData {
   @JsonKey(name: 'cluster_repayment_day')
   final String? clusterRepaymentDay;
   @JsonKey(name: 'due_agents')
-  final List<AgentDetails>? _dueAgents;
+  final List<AgentDetails> _dueAgents;
   @override
   @JsonKey(name: 'due_agents')
-  List<AgentDetails>? get dueAgents {
-    final value = _dueAgents;
-    if (value == null) return null;
+  List<AgentDetails> get dueAgents {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_dueAgents);
   }
 
   @JsonKey(name: 'active_agents')
-  final List<AgentDetails>? _activeAgents;
+  final List<AgentDetails> _activeAgents;
   @override
   @JsonKey(name: 'active_agents')
-  List<AgentDetails>? get activeAgents {
-    final value = _activeAgents;
-    if (value == null) return null;
+  List<AgentDetails> get activeAgents {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_activeAgents);
   }
 
   @JsonKey(name: 'inactive_agents')
-  final List<AgentDetails>? _inactiveAgents;
+  final List<AgentDetails> _inactiveAgents;
   @override
   @JsonKey(name: 'inactive_agents')
-  List<AgentDetails>? get inactiveAgents {
-    final value = _inactiveAgents;
-    if (value == null) return null;
+  List<AgentDetails> get inactiveAgents {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_inactiveAgents);
   }
 
   @override
@@ -375,7 +367,7 @@ abstract class _MoniData implements MoniData {
       @JsonKey(name: 'total_owed_by_members')
           final int? totalOwedByMember,
       @JsonKey(name: 'overdue_agents')
-          final List<AgentDetails>? overdueAgents,
+          final List<AgentDetails> overdueAgents,
       @JsonKey(name: 'cluster_name')
           final String? clusterName,
       @JsonKey(name: 'cluster_repayment_rate')
@@ -383,11 +375,11 @@ abstract class _MoniData implements MoniData {
       @JsonKey(name: 'cluster_repayment_day')
           final String? clusterRepaymentDay,
       @JsonKey(name: 'due_agents')
-          final List<AgentDetails>? dueAgents,
+          final List<AgentDetails> dueAgents,
       @JsonKey(name: 'active_agents')
-          final List<AgentDetails>? activeAgents,
+          final List<AgentDetails> activeAgents,
       @JsonKey(name: 'inactive_agents')
-          final List<AgentDetails>? inactiveAgents}) = _$_MoniData;
+          final List<AgentDetails> inactiveAgents}) = _$_MoniData;
 
   factory _MoniData.fromJson(Map<String, dynamic> json) = _$_MoniData.fromJson;
 
@@ -402,7 +394,7 @@ abstract class _MoniData implements MoniData {
   int? get totalOwedByMember => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'overdue_agents')
-  List<AgentDetails>? get overdueAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get overdueAgents => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'cluster_name')
   String? get clusterName => throw _privateConstructorUsedError;
@@ -414,13 +406,13 @@ abstract class _MoniData implements MoniData {
   String? get clusterRepaymentDay => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'due_agents')
-  List<AgentDetails>? get dueAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get dueAgents => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'active_agents')
-  List<AgentDetails>? get activeAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get activeAgents => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'inactive_agents')
-  List<AgentDetails>? get inactiveAgents => throw _privateConstructorUsedError;
+  List<AgentDetails> get inactiveAgents => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$MoniDataCopyWith<_MoniData> get copyWith =>

@@ -7,11 +7,11 @@ import '../../../../core/constants/strings.dart';
 import 'loan_type_section.dart';
 
 class MembersTabView extends StatelessWidget {
-  final MoniData? moniData;
+  final MoniData moniData;
 
   const MembersTabView({
     Key? key,
-    this.moniData,
+    required this.moniData,
   }) : super(key: key);
 
   @override
@@ -26,28 +26,28 @@ class MembersTabView extends StatelessWidget {
             // Overdue Loans
             LoanTypeSection(
               headerText: AppStrings.kOverdueLoansHeader,
-              agentDetails: moniData!.overdueAgents!,
+              agentDetails: moniData.overdueAgents,
               isOverdueLoanType: true,
             ),
 
             // Due Today
             LoanTypeSection(
               headerText: AppStrings.kDueTodayHeader,
-              agentDetails: moniData!.dueAgents!,
+              agentDetails: moniData.dueAgents,
               isDueLoanType: true,
             ),
 
             // Active Loans
             LoanTypeSection(
               headerText: AppStrings.kActiveLoansHeader,
-              agentDetails: moniData!.activeAgents!,
+              agentDetails: moniData.activeAgents,
               isActiveLoanType: true,
             ),
 
             // Inactive Loans
             LoanTypeSection(
               headerText: AppStrings.kInactiveLoansHeader,
-              agentDetails: moniData!.inactiveAgents!,
+              agentDetails: moniData.inactiveAgents,
               isInactiveLoanType: true,
             ),
           ],

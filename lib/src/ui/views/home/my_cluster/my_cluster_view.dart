@@ -43,9 +43,7 @@ class _MyClusterViewState extends ConsumerState<MyClusterView> {
           length: 2,
           child: Column(
             children: [
-              MyClusterTabBar(
-                moniData: viewModel.moniData,
-              ),
+              const MyClusterTabBar(),
               MyClusterBody(
                 moniData: viewModel.moniData,
               ),

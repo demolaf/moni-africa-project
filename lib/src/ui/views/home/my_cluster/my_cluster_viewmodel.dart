@@ -34,13 +34,13 @@ class MyClusterViewModel extends StateNotifier<MyClusterViewState> {
 
 class MyClusterViewState {
   final ViewState viewState;
-  final MoniData? moniData;
+  final MoniData moniData;
 
   const MyClusterViewState._({required this.viewState, required this.moniData});
 
   // initial state of the view
-  factory MyClusterViewState.initial() =>
-      const MyClusterViewState._(viewState: ViewState.idle, moniData: null);
+  factory MyClusterViewState.initial() => const MyClusterViewState._(
+      viewState: ViewState.idle, moniData: MoniData());
 
   // using the default state 'idle' if no new state
   MyClusterViewState copyWith({ViewState? viewState, MoniData? moniData}) =>

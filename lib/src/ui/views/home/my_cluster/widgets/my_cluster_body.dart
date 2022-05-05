@@ -5,9 +5,9 @@ import 'cluster_details_tab_view.dart';
 import 'members_tab_view.dart';
 
 class MyClusterBody extends StatelessWidget {
-  final MoniData? moniData;
+  final MoniData moniData;
 
-  const MyClusterBody({Key? key, this.moniData}) : super(key: key);
+  const MyClusterBody({Key? key, required this.moniData}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
