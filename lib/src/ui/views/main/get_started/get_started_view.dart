@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:moni_africa_project/src/core/navigation.dart';
 import 'package:moni_africa_project/src/ui/core/constants/colors.dart';
 import 'package:moni_africa_project/src/ui/core/constants/component_sizes.dart';
 import 'package:moni_africa_project/src/ui/core/constants/image_assets.dart';
 import 'package:moni_africa_project/src/ui/core/constants/strings.dart';
 import 'package:moni_africa_project/src/ui/core/constants/text_styles.dart';
-import 'package:moni_africa_project/src/ui/core/routes.dart';
 import 'package:moni_africa_project/src/ui/shared/stateless/button.dart';
+import 'package:moni_africa_project/src/ui/views/main/get_started/get_started_viewmodel.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({Key? key}) : super(key: key);
@@ -38,7 +37,7 @@ class GetStartedView extends StatelessWidget {
             builder: (BuildContext context, WidgetRef ref, Widget? child) {
               return ReusableButton(
                 onPressed: () {
-                  ref.read(navigationProvider).pushNamed(Routes.myClusterView);
+                  ref.read(getStartedViewModel).goToMyClusterView();
                 },
                 width: 160,
                 color: AppColors.kPrimary,
