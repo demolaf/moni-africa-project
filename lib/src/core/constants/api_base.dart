@@ -1,9 +1,14 @@
+import 'package:moni_africa_project/src/core/environment_config.dart';
+
 class ApiEndpoints {
   /// scheme
   static const httpsScheme = 'https';
 
   /// api constants
-  static const apiHost = 'moni-staging-1.vercel.app';
+  static const apiHost = EnvironmentConfig.isDebug
+      ? 'moni-staging-1.vercel.app'
+      : 'moni-staging-1.vercel.app';
+
   static const apiVersion = '/api';
 
   /// Api request related options
