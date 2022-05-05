@@ -1,6 +1,4 @@
-# moni_africa_project
-
-Flutter Mobile Engineer Test
+# Moni Africa Flutter Mobile Engineer Test
 
 ### Features
  - State management technique used > Riverpod
@@ -10,10 +8,12 @@ Flutter Mobile Engineer Test
  - Freezed for data modelling
 
 ## Screenshots
+<p float="left">
 <img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%201.png" width="480" height="1080"/>
 <img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%202.png" width="480" height="1080"/>
 <img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%203.png" width="480" height="1080"/>
 <img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%204.png" width="480" height="1080"/>
+</p>
 
 ## Preview
 <img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="480" height="1080"/>
