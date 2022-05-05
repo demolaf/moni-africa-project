@@ -68,7 +68,7 @@ class ClusterPurseSetting extends StatelessWidget {
         ),
         Gap.md,
         Text(
-          '₦550,000,000',
+          'NGN 550,000,000',
           style: AppTextStyles.kBodySmall.copyWith(
             fontSize: FontSize.s14,
             fontWeight: FontWeight.w700,

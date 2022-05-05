@@ -43,7 +43,7 @@ class LoanSettings extends StatelessWidget {
         ),
         Gap.sm,
         const Text(
-          '₦550,000,000',
+          'NGN 550,000,000',
           style: AppTextStyles.kBodyMedium,
         ),
         Gap.md,

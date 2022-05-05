@@ -45,7 +45,7 @@ class BenefitsEarned extends StatelessWidget {
         ),
         Gap.sm,
         Text(
-          '₦550,000,000',
+          'NGN 550,000,000',
           style: AppTextStyles.kBodySmall.copyWith(
             fontSize: FontSize.s14,
             fontWeight: FontWeight.w700,
@@ -63,14 +63,14 @@ class BenefitsEarned extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '₦550,000,000',
+              'NGN 550,000,000',
               style: AppTextStyles.kBodySmall.copyWith(
                 fontSize: FontSize.s14,
                 fontWeight: FontWeight.w700,
               ),
             ),
             Text(
-              '+₦5000 today',
+              '+NGN 5000 today',
               style: AppTextStyles.kBodySmall.copyWith(
                 fontSize: FontSize.s14,
                 color: AppColors.kGreen100,

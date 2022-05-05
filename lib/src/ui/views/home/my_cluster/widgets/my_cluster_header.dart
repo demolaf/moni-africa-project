@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 import 'package:moni_africa_project/src/model/moni_data.dart';
 import 'package:moni_africa_project/src/ui/core/constants/strings.dart';
 import 'package:moni_africa_project/src/ui/views/home/my_cluster/my_cluster_viewmodel.dart';
@@ -157,7 +160,7 @@ class MyClusterHeader extends StatelessWidget implements PreferredSizeWidget {
                       ),
                       Gap.sm,
                       Text(
-                        '₦${moniData?.clusterPurseBalance}',
+                        'NGN ${moniData?.clusterPurseBalance}',
                         style: AppTextStyles.kBodySmall.copyWith(
                           color: AppColors.kWhite,
                           fontWeight: FontWeight.w700,
@@ -166,7 +169,7 @@ class MyClusterHeader extends StatelessWidget implements PreferredSizeWidget {
                       ),
                       Gap.sm,
                       Text(
-                        '+₦550,000,000 ${AppStrings.kInterestToday}',
+                        '+NGN 550,000,000 ${AppStrings.kInterestToday}',
                         style: AppTextStyles.kBodyExtraSmall.copyWith(
                           fontSize: FontSize.s12,
                           color: AppColors.kSecondary,
@@ -207,7 +210,7 @@ class MyClusterHeader extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                   Text(
-                    '₦${moniData?.totalInterestEarned}',
+                    'NGN ${moniData?.totalInterestEarned}',
                     style: AppTextStyles.kBodySmall.copyWith(
                       color: AppColors.kYellow100,
                       fontSize: FontSize.s14,
@@ -233,7 +236,7 @@ class MyClusterHeader extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                   Text(
-                    '₦${moniData?.totalOwedByMember}',
+                    'NGN ${moniData?.totalOwedByMember}',
                     style: AppTextStyles.kBodySmall.copyWith(
                       color: AppColors.kWhite,
                       fontSize: FontSize.s14,

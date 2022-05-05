@@ -116,7 +116,7 @@ class LoanTileItem extends StatelessWidget {
                 Gap.sm,
                 Text(
                   !isInactiveLoanType
-                      ? 'N${agent.recentLoan?.agentLoan?.loanAmountDue} ${isOverdueLoanType ? AppStrings.kLateLoan : isActiveLoanType ? AppStrings.kActiveLoan : isDueLoanType ? AppStrings.kDueToday : ''}'
+                      ? 'NGN ${agent.recentLoan?.agentLoan?.loanAmountDue} ${isOverdueLoanType ? AppStrings.kLateLoan : isActiveLoanType ? AppStrings.kActiveLoan : isDueLoanType ? AppStrings.kDueToday : ''}'
                       : AppStrings.kNoActiveLoan,
                   style: AppTextStyles.kBodySmall.copyWith(
                     color: isOverdueLoanType
