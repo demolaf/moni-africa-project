@@ -15,11 +15,12 @@ dependencies:
 
   # networking
   dio: ^4.0.6
+  freezed_annotation:
+  json_annotation: ^4.5.0
 
   # utilities
   flutter_svg: ^1.0.3
   simple_moment: ^1.1.1
-  logger: ^1.1.0
 
   flutter:
     sdk: flutter
@@ -29,6 +30,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  json_serializable:
+  freezed:
+  build_runner:
+  logger: ^1.1.0
 
   flutter_lints: ^1.0.0
 
