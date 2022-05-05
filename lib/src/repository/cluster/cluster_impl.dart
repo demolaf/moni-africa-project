@@ -16,7 +16,7 @@ final clusterRepository = Provider<Cluster>(
 );
 
 class ClusterImpl implements Cluster {
-  final log = Logger();
+  final log = Logger(filter: DevelopmentFilter());
   final Api api;
 
   ClusterImpl({required this.api});

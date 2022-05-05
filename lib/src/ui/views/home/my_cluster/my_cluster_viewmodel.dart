@@ -12,7 +12,7 @@ final myClusterViewModel =
 );
 
 class MyClusterViewModel extends StateNotifier<MyClusterViewState> {
-  final log = Logger();
+  final log = Logger(filter: DevelopmentFilter());
   final Reader _reader;
 
   MyClusterViewModel(this._reader) : super(MyClusterViewState.initial());

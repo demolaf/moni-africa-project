@@ -13,7 +13,7 @@ final dioProvider = Provider<DioService>(
 );
 
 class DioService {
-  final log = Logger();
+  final log = Logger(filter: DevelopmentFilter());
   late final Dio dio;
 
   DioService() {

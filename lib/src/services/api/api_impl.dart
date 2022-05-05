@@ -18,7 +18,7 @@ final apiProvider = Provider<Api>(
 );
 
 class ApiService implements Api {
-  final _log = Logger();
+  final _log = Logger(filter: DevelopmentFilter());
   final Dio dio;
 
   ApiService({required this.dio});
