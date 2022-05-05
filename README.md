@@ -3,7 +3,7 @@
 ### Features
  - State management technique used > Riverpod
  - Clean Architecture
- - Model-View-ViewModel (MVVM) design pattern
+ - Model-View-ViewModel (MVVM) pattern
  - Network Requests with Dio
  - Freezed for data modelling
 
