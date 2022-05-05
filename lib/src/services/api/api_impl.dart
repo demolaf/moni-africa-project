@@ -1,27 +1,66 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:logger/logger.dart';
-import 'package:moni_africa_project/src/services/api/api.dart';
 
-import '../dio/dio.dart';
+import '../../core/constants/api_base.dart';
+import 'api.dart';
 import 'failure.dart';
 
-/// Api Service Provider
+/// Http Service Provider
 final apiProvider = Provider<Api>(
   (ref) {
-    return ApiService(
-      dio: ref.read(dioProvider).dio,
-    );
+    return ApiImpl();
   },
 );
 
-class ApiService implements Api {
+class ApiImpl implements Api {
   final _log = Logger(filter: DevelopmentFilter());
-  final Dio dio;
+  late final Dio _http;
 
-  ApiService({required this.dio});
+  ApiImpl() {
+    initialize();
+  }
+
+  void initialize() {
+    _http = Dio()
+      ..options.baseUrl = ApiEndpoints.baseUri.toString()
+      ..options.connectTimeout = ApiEndpoints.connectTimeout
+      ..options.sendTimeout = ApiEndpoints.sendTimeout
+      ..options.responseType = ResponseType.json
+      ..options.receiveTimeout = ApiEndpoints.receiveTimeout
+      ..httpClientAdapter
+      ..options.headers = {
+        'Content-Type': 'application/json; charset=UTF-8',
+      };
+
+    if (kDebugMode) {
+      _http.interceptors.add(LogInterceptor(
+          responseBody: true,
+          error: true,
+          requestHeader: true,
+          responseHeader: true,
+          request: true,
+          requestBody: true));
+
+      _http.interceptors.add(
+        InterceptorsWrapper(
+          onRequest:
+              (RequestOptions options, RequestInterceptorHandler handler) {
+            return handler.next(options);
+          },
+          onResponse: (Response response, ResponseInterceptorHandler handler) {
+            return handler.next(response);
+          },
+          onError: (DioError e, ErrorInterceptorHandler handler) {
+            return handler.next(e);
+          },
+        ),
+      );
+    }
+  }
 
   @override
   Future<Map<String, dynamic>> get(Uri uri,
@@ -31,7 +70,7 @@ class ApiService implements Api {
       Options? options,
       ProgressCallback? onReceiveProgress}) async {
     return await _performRequest(
-      dio.get(
+      _http.get(
         uri.toString(),
         queryParameters: queryParameters,
         options: options ?? Options(headers: headers),
