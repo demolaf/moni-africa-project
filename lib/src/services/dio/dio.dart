@@ -5,6 +5,7 @@ import 'package:logger/logger.dart';
 
 import '../../core/constants/api_base.dart';
 
+/// Dio Service Provider
 final dioProvider = Provider<DioService>(
   (ref) {
     return DioService();

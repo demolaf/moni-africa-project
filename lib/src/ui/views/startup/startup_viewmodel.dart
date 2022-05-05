@@ -3,7 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:moni_africa_project/src/core/navigation.dart';
 import 'package:moni_africa_project/src/ui/core/routes.dart';
 
-final startupViewModel = Provider<StartupViewModel>(
+/// Start up ViewModel Provider
+final startupViewModel = Provider.autoDispose<StartupViewModel>(
   (ref) => StartupViewModel(ref.read),
 );
 

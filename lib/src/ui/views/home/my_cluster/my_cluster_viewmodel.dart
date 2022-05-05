@@ -5,6 +5,7 @@ import 'package:moni_africa_project/src/repository/cluster/cluster_impl.dart';
 import '../../../../model/moni_data.dart';
 import '../../../core/enums/view_state.dart';
 
+/// My Cluster ViewModel State Notifier Provider
 final myClusterViewModel =
     StateNotifierProvider.autoDispose<MyClusterViewModel, MyClusterViewState>(
   (ref) => MyClusterViewModel(ref.read),
@@ -22,7 +23,7 @@ class MyClusterViewModel extends StateNotifier<MyClusterViewState> {
       final MoniData moniData =
           await _reader(clusterRepository).getClusterData();
       state = state.copyWith(moniData: moniData);
-      log.i('Got Here $moniData');
+      log.i('$moniData');
     } catch (e) {
       state = state.copyWith(viewState: ViewState.error);
     } finally {

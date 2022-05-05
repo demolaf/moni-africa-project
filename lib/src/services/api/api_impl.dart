@@ -8,6 +8,7 @@ import 'package:moni_africa_project/src/services/api/api.dart';
 import '../dio/dio.dart';
 import 'failure.dart';
 
+/// Api Service Provider
 final apiProvider = Provider<Api>(
   (ref) {
     return ApiService(

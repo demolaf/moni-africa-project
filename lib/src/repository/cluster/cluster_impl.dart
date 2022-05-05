@@ -8,6 +8,7 @@ import '../../model/moni.dart';
 import '../../model/moni_data.dart';
 import 'cluster.dart';
 
+/// Cluster Repository Provider
 final clusterRepository = Provider<Cluster>(
   (ref) {
     return ClusterImpl(api: ref.read(apiProvider));
