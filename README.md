@@ -1,16 +1,20 @@
 # moni_africa_project
 
-Take home assignment for Moni Africa
+Flutter Mobile Engineer Test
 
-## Getting Started
+### Features
+ - State management technique used > Riverpod
+ - Clean Architecture
+ - Model-View-ViewModel (MVVM) design pattern
+ - Network Requests with Dio
+ - Freezed for data modelling
 
-This project is a starting point for a Flutter application.
+## Screenshots
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%201.png" width="480" height="1080"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%202.png" width="480" height="1080"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%203.png" width="480" height="1080"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/view%204.png" width="480" height="1080"/>
 
-A few resources to get you started if this is your first Flutter project:
+## Preview
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="480" height="1080"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
