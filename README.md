@@ -10,7 +10,7 @@
  - Freezed for data modelling
 
 ## Preview
-<img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="320" height="640"/>
+<img src="https://github.com/demolaf/moni-africa-project/blob/dev/preview.gif" width="320" height="720"/>
 
 ## Screenshots
 <p float="left">
