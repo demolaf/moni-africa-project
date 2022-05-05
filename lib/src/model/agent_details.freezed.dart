@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'active_agents.dart';
+part of 'agent_details.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ActiveAgents _$ActiveAgentsFromJson(Map<String, dynamic> json) {
-  return _ActiveAgents.fromJson(json);
+AgentDetails _$AgentDetailsFromJson(Map<String, dynamic> json) {
+  return _AgentDetails.fromJson(json);
 }
 
 /// @nodoc
-mixin _$ActiveAgents {
+mixin _$AgentDetails {
   @JsonKey(name: 'id')
   String? get id => throw _privateConstructorUsedError;
   @JsonKey(name: 'user_id')
@@ -39,15 +39,15 @@ mixin _$ActiveAgents {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ActiveAgentsCopyWith<ActiveAgents> get copyWith =>
+  $AgentDetailsCopyWith<AgentDetails> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ActiveAgentsCopyWith<$Res> {
-  factory $ActiveAgentsCopyWith(
-          ActiveAgents value, $Res Function(ActiveAgents) then) =
-      _$ActiveAgentsCopyWithImpl<$Res>;
+abstract class $AgentDetailsCopyWith<$Res> {
+  factory $AgentDetailsCopyWith(
+          AgentDetails value, $Res Function(AgentDetails) then) =
+      _$AgentDetailsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'id') String? id,
       @JsonKey(name: 'user_id') String? userId,
@@ -62,12 +62,12 @@ abstract class $ActiveAgentsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ActiveAgentsCopyWithImpl<$Res> implements $ActiveAgentsCopyWith<$Res> {
-  _$ActiveAgentsCopyWithImpl(this._value, this._then);
+class _$AgentDetailsCopyWithImpl<$Res> implements $AgentDetailsCopyWith<$Res> {
+  _$AgentDetailsCopyWithImpl(this._value, this._then);
 
-  final ActiveAgents _value;
+  final AgentDetails _value;
   // ignore: unused_field
-  final $Res Function(ActiveAgents) _then;
+  final $Res Function(AgentDetails) _then;
 
   @override
   $Res call({
@@ -129,11 +129,11 @@ class _$ActiveAgentsCopyWithImpl<$Res> implements $ActiveAgentsCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ActiveAgentsCopyWith<$Res>
-    implements $ActiveAgentsCopyWith<$Res> {
-  factory _$ActiveAgentsCopyWith(
-          _ActiveAgents value, $Res Function(_ActiveAgents) then) =
-      __$ActiveAgentsCopyWithImpl<$Res>;
+abstract class _$AgentDetailsCopyWith<$Res>
+    implements $AgentDetailsCopyWith<$Res> {
+  factory _$AgentDetailsCopyWith(
+          _AgentDetails value, $Res Function(_AgentDetails) then) =
+      __$AgentDetailsCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'id') String? id,
@@ -150,14 +150,14 @@ abstract class _$ActiveAgentsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ActiveAgentsCopyWithImpl<$Res> extends _$ActiveAgentsCopyWithImpl<$Res>
-    implements _$ActiveAgentsCopyWith<$Res> {
-  __$ActiveAgentsCopyWithImpl(
-      _ActiveAgents _value, $Res Function(_ActiveAgents) _then)
-      : super(_value, (v) => _then(v as _ActiveAgents));
+class __$AgentDetailsCopyWithImpl<$Res> extends _$AgentDetailsCopyWithImpl<$Res>
+    implements _$AgentDetailsCopyWith<$Res> {
+  __$AgentDetailsCopyWithImpl(
+      _AgentDetails _value, $Res Function(_AgentDetails) _then)
+      : super(_value, (v) => _then(v as _AgentDetails));
 
   @override
-  _ActiveAgents get _value => super._value as _ActiveAgents;
+  _AgentDetails get _value => super._value as _AgentDetails;
 
   @override
   $Res call({
@@ -170,7 +170,7 @@ class __$ActiveAgentsCopyWithImpl<$Res> extends _$ActiveAgentsCopyWithImpl<$Res>
     Object? createdAt = freezed,
     Object? agent = freezed,
   }) {
-    return _then(_ActiveAgents(
+    return _then(_AgentDetails(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -209,8 +209,8 @@ class __$ActiveAgentsCopyWithImpl<$Res> extends _$ActiveAgentsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ActiveAgents implements _ActiveAgents {
-  _$_ActiveAgents(
+class _$_AgentDetails implements _AgentDetails {
+  const _$_AgentDetails(
       {@JsonKey(name: 'id') this.id,
       @JsonKey(name: 'user_id') this.userId,
       @JsonKey(name: 'agent_id') this.agentId,
@@ -220,8 +220,8 @@ class _$_ActiveAgents implements _ActiveAgents {
       @JsonKey(name: 'created_at') this.createdAt,
       @JsonKey(name: 'agent') this.agent});
 
-  factory _$_ActiveAgents.fromJson(Map<String, dynamic> json) =>
-      _$$_ActiveAgentsFromJson(json);
+  factory _$_AgentDetails.fromJson(Map<String, dynamic> json) =>
+      _$$_AgentDetailsFromJson(json);
 
   @override
   @JsonKey(name: 'id')
@@ -250,14 +250,14 @@ class _$_ActiveAgents implements _ActiveAgents {
 
   @override
   String toString() {
-    return 'ActiveAgents(id: $id, userId: $userId, agentId: $agentId, clusterId: $clusterId, statusId: $statusId, acceptedAt: $acceptedAt, createdAt: $createdAt, agent: $agent)';
+    return 'AgentDetails(id: $id, userId: $userId, agentId: $agentId, clusterId: $clusterId, statusId: $statusId, acceptedAt: $acceptedAt, createdAt: $createdAt, agent: $agent)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ActiveAgents &&
+            other is _AgentDetails &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.userId, userId) &&
             const DeepCollectionEquality().equals(other.agentId, agentId) &&
@@ -284,17 +284,17 @@ class _$_ActiveAgents implements _ActiveAgents {
 
   @JsonKey(ignore: true)
   @override
-  _$ActiveAgentsCopyWith<_ActiveAgents> get copyWith =>
-      __$ActiveAgentsCopyWithImpl<_ActiveAgents>(this, _$identity);
+  _$AgentDetailsCopyWith<_AgentDetails> get copyWith =>
+      __$AgentDetailsCopyWithImpl<_AgentDetails>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ActiveAgentsToJson(this);
+    return _$$_AgentDetailsToJson(this);
   }
 }
 
-abstract class _ActiveAgents implements ActiveAgents {
-  factory _ActiveAgents(
+abstract class _AgentDetails implements AgentDetails {
+  const factory _AgentDetails(
       {@JsonKey(name: 'id') final String? id,
       @JsonKey(name: 'user_id') final String? userId,
       @JsonKey(name: 'agent_id') final String? agentId,
@@ -302,10 +302,10 @@ abstract class _ActiveAgents implements ActiveAgents {
       @JsonKey(name: 'status_id') final int? statusId,
       @JsonKey(name: 'accepted_at') final String? acceptedAt,
       @JsonKey(name: 'created_at') final String? createdAt,
-      @JsonKey(name: 'agent') final Agent? agent}) = _$_ActiveAgents;
+      @JsonKey(name: 'agent') final Agent? agent}) = _$_AgentDetails;
 
-  factory _ActiveAgents.fromJson(Map<String, dynamic> json) =
-      _$_ActiveAgents.fromJson;
+  factory _AgentDetails.fromJson(Map<String, dynamic> json) =
+      _$_AgentDetails.fromJson;
 
   @override
   @JsonKey(name: 'id')
@@ -333,6 +333,6 @@ abstract class _ActiveAgents implements ActiveAgents {
   Agent? get agent => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$ActiveAgentsCopyWith<_ActiveAgents> get copyWith =>
+  _$AgentDetailsCopyWith<_AgentDetails> get copyWith =>
       throw _privateConstructorUsedError;
 }

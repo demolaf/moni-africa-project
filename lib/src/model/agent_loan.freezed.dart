@@ -40,18 +40,12 @@ mixin _$AgentLoan {
   int? get loanDuration => throw _privateConstructorUsedError;
   @JsonKey(name: 'loan_due_date')
   String? get loanDueDate => throw _privateConstructorUsedError;
-  @JsonKey(name: 'days_past_due')
-  String? get daysPastDue => throw _privateConstructorUsedError;
   @JsonKey(name: 'loan_amount')
   int? get loanAmount => throw _privateConstructorUsedError;
   @JsonKey(name: 'loan_amount_due')
   int? get loanAmountDue => throw _privateConstructorUsedError;
   @JsonKey(name: 'loan_interest_due')
   int? get loanInterestDue => throw _privateConstructorUsedError;
-  @JsonKey(name: 'loan_payment_date')
-  String? get loanPaymentDate => throw _privateConstructorUsedError;
-  @JsonKey(name: 'loan_payment_rate')
-  int? get loanPaymentRate => throw _privateConstructorUsedError;
   @JsonKey(name: 'loan_amount_paid')
   int? get loanAmountPaid => throw _privateConstructorUsedError;
   @JsonKey(name: 'penalty_outstanding')
@@ -81,7 +75,7 @@ mixin _$AgentLoan {
   @JsonKey(name: 'modified_at')
   String? get modifiedAt => throw _privateConstructorUsedError;
   @JsonKey(name: 'status')
-  LoanStatus? get status => throw _privateConstructorUsedError;
+  Status? get status => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -104,12 +98,9 @@ abstract class $AgentLoanCopyWith<$Res> {
       @JsonKey(name: 'loan_duration_type') String? loanDurationType,
       @JsonKey(name: 'loan_duration') int? loanDuration,
       @JsonKey(name: 'loan_due_date') String? loanDueDate,
-      @JsonKey(name: 'days_past_due') String? daysPastDue,
       @JsonKey(name: 'loan_amount') int? loanAmount,
       @JsonKey(name: 'loan_amount_due') int? loanAmountDue,
       @JsonKey(name: 'loan_interest_due') int? loanInterestDue,
-      @JsonKey(name: 'loan_payment_date') String? loanPaymentDate,
-      @JsonKey(name: 'loan_payment_rate') int? loanPaymentRate,
       @JsonKey(name: 'loan_amount_paid') int? loanAmountPaid,
       @JsonKey(name: 'penalty_outstanding') int? penaltyOutstanding,
       @JsonKey(name: 'penalty_paid') int? penaltyPaid,
@@ -124,10 +115,10 @@ abstract class $AgentLoanCopyWith<$Res> {
       @JsonKey(name: 'accept_terms') int? acceptTerms,
       @JsonKey(name: 'created_at') String? createdAt,
       @JsonKey(name: 'modified_at') String? modifiedAt,
-      @JsonKey(name: 'status') LoanStatus? status});
+      @JsonKey(name: 'status') Status? status});
 
   $LoanStatusCopyWith<$Res>? get loanStatus;
-  $LoanStatusCopyWith<$Res>? get status;
+  $StatusCopyWith<$Res>? get status;
 }
 
 /// @nodoc
@@ -150,12 +141,9 @@ class _$AgentLoanCopyWithImpl<$Res> implements $AgentLoanCopyWith<$Res> {
     Object? loanDurationType = freezed,
     Object? loanDuration = freezed,
     Object? loanDueDate = freezed,
-    Object? daysPastDue = freezed,
     Object? loanAmount = freezed,
     Object? loanAmountDue = freezed,
     Object? loanInterestDue = freezed,
-    Object? loanPaymentDate = freezed,
-    Object? loanPaymentRate = freezed,
     Object? loanAmountPaid = freezed,
     Object? penaltyOutstanding = freezed,
     Object? penaltyPaid = freezed,
@@ -213,10 +201,6 @@ class _$AgentLoanCopyWithImpl<$Res> implements $AgentLoanCopyWith<$Res> {
           ? _value.loanDueDate
           : loanDueDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      daysPastDue: daysPastDue == freezed
-          ? _value.daysPastDue
-          : daysPastDue // ignore: cast_nullable_to_non_nullable
-              as String?,
       loanAmount: loanAmount == freezed
           ? _value.loanAmount
           : loanAmount // ignore: cast_nullable_to_non_nullable
@@ -228,14 +212,6 @@ class _$AgentLoanCopyWithImpl<$Res> implements $AgentLoanCopyWith<$Res> {
       loanInterestDue: loanInterestDue == freezed
           ? _value.loanInterestDue
           : loanInterestDue // ignore: cast_nullable_to_non_nullable
-              as int?,
-      loanPaymentDate: loanPaymentDate == freezed
-          ? _value.loanPaymentDate
-          : loanPaymentDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      loanPaymentRate: loanPaymentRate == freezed
-          ? _value.loanPaymentRate
-          : loanPaymentRate // ignore: cast_nullable_to_non_nullable
               as int?,
       loanAmountPaid: loanAmountPaid == freezed
           ? _value.loanAmountPaid
@@ -296,7 +272,7 @@ class _$AgentLoanCopyWithImpl<$Res> implements $AgentLoanCopyWith<$Res> {
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as LoanStatus?,
+              as Status?,
     ));
   }
 
@@ -312,12 +288,12 @@ class _$AgentLoanCopyWithImpl<$Res> implements $AgentLoanCopyWith<$Res> {
   }
 
   @override
-  $LoanStatusCopyWith<$Res>? get status {
+  $StatusCopyWith<$Res>? get status {
     if (_value.status == null) {
       return null;
     }
 
-    return $LoanStatusCopyWith<$Res>(_value.status!, (value) {
+    return $StatusCopyWith<$Res>(_value.status!, (value) {
       return _then(_value.copyWith(status: value));
     });
   }
@@ -340,12 +316,9 @@ abstract class _$AgentLoanCopyWith<$Res> implements $AgentLoanCopyWith<$Res> {
       @JsonKey(name: 'loan_duration_type') String? loanDurationType,
       @JsonKey(name: 'loan_duration') int? loanDuration,
       @JsonKey(name: 'loan_due_date') String? loanDueDate,
-      @JsonKey(name: 'days_past_due') String? daysPastDue,
       @JsonKey(name: 'loan_amount') int? loanAmount,
       @JsonKey(name: 'loan_amount_due') int? loanAmountDue,
       @JsonKey(name: 'loan_interest_due') int? loanInterestDue,
-      @JsonKey(name: 'loan_payment_date') String? loanPaymentDate,
-      @JsonKey(name: 'loan_payment_rate') int? loanPaymentRate,
       @JsonKey(name: 'loan_amount_paid') int? loanAmountPaid,
       @JsonKey(name: 'penalty_outstanding') int? penaltyOutstanding,
       @JsonKey(name: 'penalty_paid') int? penaltyPaid,
@@ -360,12 +333,12 @@ abstract class _$AgentLoanCopyWith<$Res> implements $AgentLoanCopyWith<$Res> {
       @JsonKey(name: 'accept_terms') int? acceptTerms,
       @JsonKey(name: 'created_at') String? createdAt,
       @JsonKey(name: 'modified_at') String? modifiedAt,
-      @JsonKey(name: 'status') LoanStatus? status});
+      @JsonKey(name: 'status') Status? status});
 
   @override
   $LoanStatusCopyWith<$Res>? get loanStatus;
   @override
-  $LoanStatusCopyWith<$Res>? get status;
+  $StatusCopyWith<$Res>? get status;
 }
 
 /// @nodoc
@@ -389,12 +362,9 @@ class __$AgentLoanCopyWithImpl<$Res> extends _$AgentLoanCopyWithImpl<$Res>
     Object? loanDurationType = freezed,
     Object? loanDuration = freezed,
     Object? loanDueDate = freezed,
-    Object? daysPastDue = freezed,
     Object? loanAmount = freezed,
     Object? loanAmountDue = freezed,
     Object? loanInterestDue = freezed,
-    Object? loanPaymentDate = freezed,
-    Object? loanPaymentRate = freezed,
     Object? loanAmountPaid = freezed,
     Object? penaltyOutstanding = freezed,
     Object? penaltyPaid = freezed,
@@ -452,10 +422,6 @@ class __$AgentLoanCopyWithImpl<$Res> extends _$AgentLoanCopyWithImpl<$Res>
           ? _value.loanDueDate
           : loanDueDate // ignore: cast_nullable_to_non_nullable
               as String?,
-      daysPastDue: daysPastDue == freezed
-          ? _value.daysPastDue
-          : daysPastDue // ignore: cast_nullable_to_non_nullable
-              as String?,
       loanAmount: loanAmount == freezed
           ? _value.loanAmount
           : loanAmount // ignore: cast_nullable_to_non_nullable
@@ -467,14 +433,6 @@ class __$AgentLoanCopyWithImpl<$Res> extends _$AgentLoanCopyWithImpl<$Res>
       loanInterestDue: loanInterestDue == freezed
           ? _value.loanInterestDue
           : loanInterestDue // ignore: cast_nullable_to_non_nullable
-              as int?,
-      loanPaymentDate: loanPaymentDate == freezed
-          ? _value.loanPaymentDate
-          : loanPaymentDate // ignore: cast_nullable_to_non_nullable
-              as String?,
-      loanPaymentRate: loanPaymentRate == freezed
-          ? _value.loanPaymentRate
-          : loanPaymentRate // ignore: cast_nullable_to_non_nullable
               as int?,
       loanAmountPaid: loanAmountPaid == freezed
           ? _value.loanAmountPaid
@@ -535,7 +493,7 @@ class __$AgentLoanCopyWithImpl<$Res> extends _$AgentLoanCopyWithImpl<$Res>
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as LoanStatus?,
+              as Status?,
     ));
   }
 }
@@ -543,7 +501,7 @@ class __$AgentLoanCopyWithImpl<$Res> extends _$AgentLoanCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_AgentLoan implements _AgentLoan {
-  _$_AgentLoan(
+  const _$_AgentLoan(
       {@JsonKey(name: 'id') this.id,
       @JsonKey(name: 'agent_id') this.agentId,
       @JsonKey(name: 'agent_credit_score_id') this.agentCreditScoreId,
@@ -554,12 +512,9 @@ class _$_AgentLoan implements _AgentLoan {
       @JsonKey(name: 'loan_duration_type') this.loanDurationType,
       @JsonKey(name: 'loan_duration') this.loanDuration,
       @JsonKey(name: 'loan_due_date') this.loanDueDate,
-      @JsonKey(name: 'days_past_due') this.daysPastDue,
       @JsonKey(name: 'loan_amount') this.loanAmount,
       @JsonKey(name: 'loan_amount_due') this.loanAmountDue,
       @JsonKey(name: 'loan_interest_due') this.loanInterestDue,
-      @JsonKey(name: 'loan_payment_date') this.loanPaymentDate,
-      @JsonKey(name: 'loan_payment_rate') this.loanPaymentRate,
       @JsonKey(name: 'loan_amount_paid') this.loanAmountPaid,
       @JsonKey(name: 'penalty_outstanding') this.penaltyOutstanding,
       @JsonKey(name: 'penalty_paid') this.penaltyPaid,
@@ -610,9 +565,6 @@ class _$_AgentLoan implements _AgentLoan {
   @JsonKey(name: 'loan_due_date')
   final String? loanDueDate;
   @override
-  @JsonKey(name: 'days_past_due')
-  final String? daysPastDue;
-  @override
   @JsonKey(name: 'loan_amount')
   final int? loanAmount;
   @override
@@ -621,12 +573,6 @@ class _$_AgentLoan implements _AgentLoan {
   @override
   @JsonKey(name: 'loan_interest_due')
   final int? loanInterestDue;
-  @override
-  @JsonKey(name: 'loan_payment_date')
-  final String? loanPaymentDate;
-  @override
-  @JsonKey(name: 'loan_payment_rate')
-  final int? loanPaymentRate;
   @override
   @JsonKey(name: 'loan_amount_paid')
   final int? loanAmountPaid;
@@ -671,11 +617,11 @@ class _$_AgentLoan implements _AgentLoan {
   final String? modifiedAt;
   @override
   @JsonKey(name: 'status')
-  final LoanStatus? status;
+  final Status? status;
 
   @override
   String toString() {
-    return 'AgentLoan(id: $id, agentId: $agentId, agentCreditScoreId: $agentCreditScoreId, loanId: $loanId, agentCardId: $agentCardId, interestType: $interestType, interestValue: $interestValue, loanDurationType: $loanDurationType, loanDuration: $loanDuration, loanDueDate: $loanDueDate, daysPastDue: $daysPastDue, loanAmount: $loanAmount, loanAmountDue: $loanAmountDue, loanInterestDue: $loanInterestDue, loanPaymentDate: $loanPaymentDate, loanPaymentRate: $loanPaymentRate, loanAmountPaid: $loanAmountPaid, penaltyOutstanding: $penaltyOutstanding, penaltyPaid: $penaltyPaid, principalPaid: $principalPaid, principalOutstanding: $principalOutstanding, interestPaid: $interestPaid, interestOutstanding: $interestOutstanding, penaltyAmount: $penaltyAmount, loanStatus: $loanStatus, isMax: $isMax, statusId: $statusId, acceptTerms: $acceptTerms, createdAt: $createdAt, modifiedAt: $modifiedAt, status: $status)';
+    return 'AgentLoan(id: $id, agentId: $agentId, agentCreditScoreId: $agentCreditScoreId, loanId: $loanId, agentCardId: $agentCardId, interestType: $interestType, interestValue: $interestValue, loanDurationType: $loanDurationType, loanDuration: $loanDuration, loanDueDate: $loanDueDate, loanAmount: $loanAmount, loanAmountDue: $loanAmountDue, loanInterestDue: $loanInterestDue, loanAmountPaid: $loanAmountPaid, penaltyOutstanding: $penaltyOutstanding, penaltyPaid: $penaltyPaid, principalPaid: $principalPaid, principalOutstanding: $principalOutstanding, interestPaid: $interestPaid, interestOutstanding: $interestOutstanding, penaltyAmount: $penaltyAmount, loanStatus: $loanStatus, isMax: $isMax, statusId: $statusId, acceptTerms: $acceptTerms, createdAt: $createdAt, modifiedAt: $modifiedAt, status: $status)';
   }
 
   @override
@@ -701,17 +647,11 @@ class _$_AgentLoan implements _AgentLoan {
             const DeepCollectionEquality()
                 .equals(other.loanDueDate, loanDueDate) &&
             const DeepCollectionEquality()
-                .equals(other.daysPastDue, daysPastDue) &&
-            const DeepCollectionEquality()
                 .equals(other.loanAmount, loanAmount) &&
             const DeepCollectionEquality()
                 .equals(other.loanAmountDue, loanAmountDue) &&
             const DeepCollectionEquality()
                 .equals(other.loanInterestDue, loanInterestDue) &&
-            const DeepCollectionEquality()
-                .equals(other.loanPaymentDate, loanPaymentDate) &&
-            const DeepCollectionEquality()
-                .equals(other.loanPaymentRate, loanPaymentRate) &&
             const DeepCollectionEquality()
                 .equals(other.loanAmountPaid, loanAmountPaid) &&
             const DeepCollectionEquality()
@@ -754,12 +694,9 @@ class _$_AgentLoan implements _AgentLoan {
         const DeepCollectionEquality().hash(loanDurationType),
         const DeepCollectionEquality().hash(loanDuration),
         const DeepCollectionEquality().hash(loanDueDate),
-        const DeepCollectionEquality().hash(daysPastDue),
         const DeepCollectionEquality().hash(loanAmount),
         const DeepCollectionEquality().hash(loanAmountDue),
         const DeepCollectionEquality().hash(loanInterestDue),
-        const DeepCollectionEquality().hash(loanPaymentDate),
-        const DeepCollectionEquality().hash(loanPaymentRate),
         const DeepCollectionEquality().hash(loanAmountPaid),
         const DeepCollectionEquality().hash(penaltyOutstanding),
         const DeepCollectionEquality().hash(penaltyPaid),
@@ -789,7 +726,7 @@ class _$_AgentLoan implements _AgentLoan {
 }
 
 abstract class _AgentLoan implements AgentLoan {
-  factory _AgentLoan(
+  const factory _AgentLoan(
       {@JsonKey(name: 'id') final String? id,
       @JsonKey(name: 'agent_id') final String? agentId,
       @JsonKey(name: 'agent_credit_score_id') final String? agentCreditScoreId,
@@ -800,12 +737,9 @@ abstract class _AgentLoan implements AgentLoan {
       @JsonKey(name: 'loan_duration_type') final String? loanDurationType,
       @JsonKey(name: 'loan_duration') final int? loanDuration,
       @JsonKey(name: 'loan_due_date') final String? loanDueDate,
-      @JsonKey(name: 'days_past_due') final String? daysPastDue,
       @JsonKey(name: 'loan_amount') final int? loanAmount,
       @JsonKey(name: 'loan_amount_due') final int? loanAmountDue,
       @JsonKey(name: 'loan_interest_due') final int? loanInterestDue,
-      @JsonKey(name: 'loan_payment_date') final String? loanPaymentDate,
-      @JsonKey(name: 'loan_payment_rate') final int? loanPaymentRate,
       @JsonKey(name: 'loan_amount_paid') final int? loanAmountPaid,
       @JsonKey(name: 'penalty_outstanding') final int? penaltyOutstanding,
       @JsonKey(name: 'penalty_paid') final int? penaltyPaid,
@@ -820,7 +754,7 @@ abstract class _AgentLoan implements AgentLoan {
       @JsonKey(name: 'accept_terms') final int? acceptTerms,
       @JsonKey(name: 'created_at') final String? createdAt,
       @JsonKey(name: 'modified_at') final String? modifiedAt,
-      @JsonKey(name: 'status') final LoanStatus? status}) = _$_AgentLoan;
+      @JsonKey(name: 'status') final Status? status}) = _$_AgentLoan;
 
   factory _AgentLoan.fromJson(Map<String, dynamic> json) =
       _$_AgentLoan.fromJson;
@@ -856,9 +790,6 @@ abstract class _AgentLoan implements AgentLoan {
   @JsonKey(name: 'loan_due_date')
   String? get loanDueDate => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: 'days_past_due')
-  String? get daysPastDue => throw _privateConstructorUsedError;
-  @override
   @JsonKey(name: 'loan_amount')
   int? get loanAmount => throw _privateConstructorUsedError;
   @override
@@ -867,12 +798,6 @@ abstract class _AgentLoan implements AgentLoan {
   @override
   @JsonKey(name: 'loan_interest_due')
   int? get loanInterestDue => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: 'loan_payment_date')
-  String? get loanPaymentDate => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: 'loan_payment_rate')
-  int? get loanPaymentRate => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'loan_amount_paid')
   int? get loanAmountPaid => throw _privateConstructorUsedError;
@@ -917,7 +842,7 @@ abstract class _AgentLoan implements AgentLoan {
   String? get modifiedAt => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'status')
-  LoanStatus? get status => throw _privateConstructorUsedError;
+  Status? get status => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$AgentLoanCopyWith<_AgentLoan> get copyWith =>

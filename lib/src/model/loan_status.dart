@@ -1,11 +1,12 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'loan_status.freezed.dart';
+
 part 'loan_status.g.dart';
 
 @freezed
 class LoanStatus with _$LoanStatus {
-  factory LoanStatus({
+  const factory LoanStatus({
     @JsonKey(name: 'id') int? id,
     @JsonKey(name: 'name') String? name,
     @JsonKey(name: 'label') String? label,

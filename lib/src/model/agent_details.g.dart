@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'inactive_agents.dart';
+part of 'agent_details.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_InactiveAgents _$$_InactiveAgentsFromJson(Map<String, dynamic> json) =>
-    _$_InactiveAgents(
+_$_AgentDetails _$$_AgentDetailsFromJson(Map<String, dynamic> json) =>
+    _$_AgentDetails(
       id: json['id'] as String?,
       userId: json['user_id'] as String?,
       agentId: json['agent_id'] as String?,
@@ -20,7 +20,7 @@ _$_InactiveAgents _$$_InactiveAgentsFromJson(Map<String, dynamic> json) =>
           : Agent.fromJson(json['agent'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_InactiveAgentsToJson(_$_InactiveAgents instance) =>
+Map<String, dynamic> _$$_AgentDetailsToJson(_$_AgentDetails instance) =>
     <String, dynamic>{
       'id': instance.id,
       'user_id': instance.userId,

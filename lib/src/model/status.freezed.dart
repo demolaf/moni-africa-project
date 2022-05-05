@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'loan_status.dart';
+part of 'status.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-LoanStatus _$LoanStatusFromJson(Map<String, dynamic> json) {
-  return _LoanStatus.fromJson(json);
+Status _$StatusFromJson(Map<String, dynamic> json) {
+  return _Status.fromJson(json);
 }
 
 /// @nodoc
-mixin _$LoanStatus {
+mixin _$Status {
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
   @JsonKey(name: 'name')
@@ -35,15 +35,13 @@ mixin _$LoanStatus {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $LoanStatusCopyWith<LoanStatus> get copyWith =>
-      throw _privateConstructorUsedError;
+  $StatusCopyWith<Status> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoanStatusCopyWith<$Res> {
-  factory $LoanStatusCopyWith(
-          LoanStatus value, $Res Function(LoanStatus) then) =
-      _$LoanStatusCopyWithImpl<$Res>;
+abstract class $StatusCopyWith<$Res> {
+  factory $StatusCopyWith(Status value, $Res Function(Status) then) =
+      _$StatusCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'id') int? id,
       @JsonKey(name: 'name') String? name,
@@ -54,12 +52,12 @@ abstract class $LoanStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LoanStatusCopyWithImpl<$Res> implements $LoanStatusCopyWith<$Res> {
-  _$LoanStatusCopyWithImpl(this._value, this._then);
+class _$StatusCopyWithImpl<$Res> implements $StatusCopyWith<$Res> {
+  _$StatusCopyWithImpl(this._value, this._then);
 
-  final LoanStatus _value;
+  final Status _value;
   // ignore: unused_field
-  final $Res Function(LoanStatus) _then;
+  final $Res Function(Status) _then;
 
   @override
   $Res call({
@@ -100,10 +98,9 @@ class _$LoanStatusCopyWithImpl<$Res> implements $LoanStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$LoanStatusCopyWith<$Res> implements $LoanStatusCopyWith<$Res> {
-  factory _$LoanStatusCopyWith(
-          _LoanStatus value, $Res Function(_LoanStatus) then) =
-      __$LoanStatusCopyWithImpl<$Res>;
+abstract class _$StatusCopyWith<$Res> implements $StatusCopyWith<$Res> {
+  factory _$StatusCopyWith(_Status value, $Res Function(_Status) then) =
+      __$StatusCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'id') int? id,
@@ -115,14 +112,13 @@ abstract class _$LoanStatusCopyWith<$Res> implements $LoanStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$LoanStatusCopyWithImpl<$Res> extends _$LoanStatusCopyWithImpl<$Res>
-    implements _$LoanStatusCopyWith<$Res> {
-  __$LoanStatusCopyWithImpl(
-      _LoanStatus _value, $Res Function(_LoanStatus) _then)
-      : super(_value, (v) => _then(v as _LoanStatus));
+class __$StatusCopyWithImpl<$Res> extends _$StatusCopyWithImpl<$Res>
+    implements _$StatusCopyWith<$Res> {
+  __$StatusCopyWithImpl(_Status _value, $Res Function(_Status) _then)
+      : super(_value, (v) => _then(v as _Status));
 
   @override
-  _LoanStatus get _value => super._value as _LoanStatus;
+  _Status get _value => super._value as _Status;
 
   @override
   $Res call({
@@ -133,7 +129,7 @@ class __$LoanStatusCopyWithImpl<$Res> extends _$LoanStatusCopyWithImpl<$Res>
     Object? createdAt = freezed,
     Object? modifiedAt = freezed,
   }) {
-    return _then(_LoanStatus(
+    return _then(_Status(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -164,8 +160,8 @@ class __$LoanStatusCopyWithImpl<$Res> extends _$LoanStatusCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LoanStatus implements _LoanStatus {
-  const _$_LoanStatus(
+class _$_Status implements _Status {
+  const _$_Status(
       {@JsonKey(name: 'id') this.id,
       @JsonKey(name: 'name') this.name,
       @JsonKey(name: 'label') this.label,
@@ -173,8 +169,8 @@ class _$_LoanStatus implements _LoanStatus {
       @JsonKey(name: 'created_at') this.createdAt,
       @JsonKey(name: 'modified_at') this.modifiedAt});
 
-  factory _$_LoanStatus.fromJson(Map<String, dynamic> json) =>
-      _$$_LoanStatusFromJson(json);
+  factory _$_Status.fromJson(Map<String, dynamic> json) =>
+      _$$_StatusFromJson(json);
 
   @override
   @JsonKey(name: 'id')
@@ -197,14 +193,14 @@ class _$_LoanStatus implements _LoanStatus {
 
   @override
   String toString() {
-    return 'LoanStatus(id: $id, name: $name, label: $label, description: $description, createdAt: $createdAt, modifiedAt: $modifiedAt)';
+    return 'Status(id: $id, name: $name, label: $label, description: $description, createdAt: $createdAt, modifiedAt: $modifiedAt)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _LoanStatus &&
+            other is _Status &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.label, label) &&
@@ -228,26 +224,25 @@ class _$_LoanStatus implements _LoanStatus {
 
   @JsonKey(ignore: true)
   @override
-  _$LoanStatusCopyWith<_LoanStatus> get copyWith =>
-      __$LoanStatusCopyWithImpl<_LoanStatus>(this, _$identity);
+  _$StatusCopyWith<_Status> get copyWith =>
+      __$StatusCopyWithImpl<_Status>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LoanStatusToJson(this);
+    return _$$_StatusToJson(this);
   }
 }
 
-abstract class _LoanStatus implements LoanStatus {
-  const factory _LoanStatus(
+abstract class _Status implements Status {
+  const factory _Status(
       {@JsonKey(name: 'id') final int? id,
       @JsonKey(name: 'name') final String? name,
       @JsonKey(name: 'label') final String? label,
       @JsonKey(name: 'description') final String? description,
       @JsonKey(name: 'created_at') final String? createdAt,
-      @JsonKey(name: 'modified_at') final String? modifiedAt}) = _$_LoanStatus;
+      @JsonKey(name: 'modified_at') final String? modifiedAt}) = _$_Status;
 
-  factory _LoanStatus.fromJson(Map<String, dynamic> json) =
-      _$_LoanStatus.fromJson;
+  factory _Status.fromJson(Map<String, dynamic> json) = _$_Status.fromJson;
 
   @override
   @JsonKey(name: 'id')
@@ -269,6 +264,5 @@ abstract class _LoanStatus implements LoanStatus {
   String? get modifiedAt => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$LoanStatusCopyWith<_LoanStatus> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$StatusCopyWith<_Status> get copyWith => throw _privateConstructorUsedError;
 }

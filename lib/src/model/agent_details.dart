@@ -2,12 +2,13 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'agent.dart';
 
-part 'active_agents.freezed.dart';
-part 'active_agents.g.dart';
+part 'agent_details.freezed.dart';
+
+part 'agent_details.g.dart';
 
 @freezed
-class ActiveAgents with _$ActiveAgents {
-  factory ActiveAgents({
+class AgentDetails with _$AgentDetails {
+  const factory AgentDetails({
     @JsonKey(name: 'id') String? id,
     @JsonKey(name: 'user_id') String? userId,
     @JsonKey(name: 'agent_id') String? agentId,
@@ -16,8 +17,8 @@ class ActiveAgents with _$ActiveAgents {
     @JsonKey(name: 'accepted_at') String? acceptedAt,
     @JsonKey(name: 'created_at') String? createdAt,
     @JsonKey(name: 'agent') Agent? agent,
-  }) = _ActiveAgents;
+  }) = _AgentDetails;
 
-  factory ActiveAgents.fromJson(Map<String, dynamic> json) =>
-      _$ActiveAgentsFromJson(json);
+  factory AgentDetails.fromJson(Map<String, dynamic> json) =>
+      _$AgentDetailsFromJson(json);
 }

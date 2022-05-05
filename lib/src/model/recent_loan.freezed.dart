@@ -195,7 +195,7 @@ class __$RecentLoanCopyWithImpl<$Res> extends _$RecentLoanCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_RecentLoan implements _RecentLoan {
-  _$_RecentLoan(
+  const _$_RecentLoan(
       {@JsonKey(name: 'id') this.id,
       @JsonKey(name: 'agent_id') this.agentId,
       @JsonKey(name: 'cluster_id') this.clusterId,
@@ -274,7 +274,7 @@ class _$_RecentLoan implements _RecentLoan {
 }
 
 abstract class _RecentLoan implements RecentLoan {
-  factory _RecentLoan(
+  const factory _RecentLoan(
       {@JsonKey(name: 'id') final String? id,
       @JsonKey(name: 'agent_id') final String? agentId,
       @JsonKey(name: 'cluster_id') final String? clusterId,

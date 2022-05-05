@@ -17,12 +17,9 @@ _$_AgentLoan _$$_AgentLoanFromJson(Map<String, dynamic> json) => _$_AgentLoan(
       loanDurationType: json['loan_duration_type'] as String?,
       loanDuration: json['loan_duration'] as int?,
       loanDueDate: json['loan_due_date'] as String?,
-      daysPastDue: json['days_past_due'] as String?,
       loanAmount: json['loan_amount'] as int?,
       loanAmountDue: json['loan_amount_due'] as int?,
       loanInterestDue: json['loan_interest_due'] as int?,
-      loanPaymentDate: json['loan_payment_date'] as String?,
-      loanPaymentRate: json['loan_payment_rate'] as int?,
       loanAmountPaid: json['loan_amount_paid'] as int?,
       penaltyOutstanding: json['penalty_outstanding'] as int?,
       penaltyPaid: json['penalty_paid'] as int?,
@@ -41,7 +38,7 @@ _$_AgentLoan _$$_AgentLoanFromJson(Map<String, dynamic> json) => _$_AgentLoan(
       modifiedAt: json['modified_at'] as String?,
       status: json['status'] == null
           ? null
-          : LoanStatus.fromJson(json['status'] as Map<String, dynamic>),
+          : Status.fromJson(json['status'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AgentLoanToJson(_$_AgentLoan instance) =>
@@ -56,12 +53,9 @@ Map<String, dynamic> _$$_AgentLoanToJson(_$_AgentLoan instance) =>
       'loan_duration_type': instance.loanDurationType,
       'loan_duration': instance.loanDuration,
       'loan_due_date': instance.loanDueDate,
-      'days_past_due': instance.daysPastDue,
       'loan_amount': instance.loanAmount,
       'loan_amount_due': instance.loanAmountDue,
       'loan_interest_due': instance.loanInterestDue,
-      'loan_payment_date': instance.loanPaymentDate,
-      'loan_payment_rate': instance.loanPaymentRate,
       'loan_amount_paid': instance.loanAmountPaid,
       'penalty_outstanding': instance.penaltyOutstanding,
       'penalty_paid': instance.penaltyPaid,

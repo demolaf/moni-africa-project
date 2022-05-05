@@ -701,7 +701,7 @@ class __$AgentCopyWithImpl<$Res> extends _$AgentCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Agent implements _Agent {
-  _$_Agent(
+  const _$_Agent(
       {@JsonKey(name: 'id') this.id,
       @JsonKey(name: 'user_id') this.userId,
       @JsonKey(name: 'moni_id') this.moniId,
@@ -982,7 +982,7 @@ class _$_Agent implements _Agent {
 }
 
 abstract class _Agent implements Agent {
-  factory _Agent(
+  const factory _Agent(
       {@JsonKey(name: 'id')
           final String? id,
       @JsonKey(name: 'user_id')

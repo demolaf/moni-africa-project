@@ -7,7 +7,7 @@ part 'agent.g.dart';
 
 @freezed
 class Agent with _$Agent {
-  factory Agent({
+  const factory Agent({
     @JsonKey(name: 'id') String? id,
     @JsonKey(name: 'user_id') String? userId,
     @JsonKey(name: 'moni_id') String? moniId,

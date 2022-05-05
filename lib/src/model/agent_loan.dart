@@ -1,14 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:moni_africa_project/src/model/status.dart';
 
 import 'loan_status.dart';
 
 part 'agent_loan.freezed.dart';
-
 part 'agent_loan.g.dart';
 
 @freezed
 class AgentLoan with _$AgentLoan {
-  factory AgentLoan({
+  const factory AgentLoan({
     @JsonKey(name: 'id') String? id,
     @JsonKey(name: 'agent_id') String? agentId,
     @JsonKey(name: 'agent_credit_score_id') String? agentCreditScoreId,
@@ -19,12 +19,9 @@ class AgentLoan with _$AgentLoan {
     @JsonKey(name: 'loan_duration_type') String? loanDurationType,
     @JsonKey(name: 'loan_duration') int? loanDuration,
     @JsonKey(name: 'loan_due_date') String? loanDueDate,
-    @JsonKey(name: 'days_past_due') String? daysPastDue,
     @JsonKey(name: 'loan_amount') int? loanAmount,
     @JsonKey(name: 'loan_amount_due') int? loanAmountDue,
     @JsonKey(name: 'loan_interest_due') int? loanInterestDue,
-    @JsonKey(name: 'loan_payment_date') String? loanPaymentDate,
-    @JsonKey(name: 'loan_payment_rate') int? loanPaymentRate,
     @JsonKey(name: 'loan_amount_paid') int? loanAmountPaid,
     @JsonKey(name: 'penalty_outstanding') int? penaltyOutstanding,
     @JsonKey(name: 'penalty_paid') int? penaltyPaid,
@@ -39,7 +36,7 @@ class AgentLoan with _$AgentLoan {
     @JsonKey(name: 'accept_terms') int? acceptTerms,
     @JsonKey(name: 'created_at') String? createdAt,
     @JsonKey(name: 'modified_at') String? modifiedAt,
-    @JsonKey(name: 'status') LoanStatus? status,
+    @JsonKey(name: 'status') Status? status,
   }) = _AgentLoan;
 
   factory AgentLoan.fromJson(Map<String, dynamic> json) =>
