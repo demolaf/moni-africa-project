@@ -23,7 +23,7 @@ class ApiService implements Api {
   ApiService({required this.dio});
 
   @override
-  Future get(Uri uri,
+  Future<Map<String, dynamic>> get(Uri uri,
       {Map<String, dynamic>? queryParameters,
       Map<String, dynamic>? headers,
       CancelToken? cancelToken,

@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
 abstract class Api {
-  Future<dynamic> get(
+  Future<Map<String, dynamic>> get(
     Uri uri, {
     Map<String, dynamic>? queryParameters,
     Map<String, dynamic>? headers,
