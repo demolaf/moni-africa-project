@@ -3,12 +3,11 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'agent_loan.dart';
 
 part 'recent_loan.freezed.dart';
-
 part 'recent_loan.g.dart';
 
 @freezed
 class RecentLoan with _$RecentLoan {
-  factory RecentLoan({
+  const factory RecentLoan({
     @JsonKey(name: 'id') String? id,
     @JsonKey(name: 'agent_id') String? agentId,
     @JsonKey(name: 'cluster_id') String? clusterId,
