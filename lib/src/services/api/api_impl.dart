@@ -44,22 +44,21 @@ class ApiImpl implements Api {
           responseHeader: true,
           request: true,
           requestBody: true));
-
-      _http.interceptors.add(
-        InterceptorsWrapper(
-          onRequest:
-              (RequestOptions options, RequestInterceptorHandler handler) {
-            return handler.next(options);
-          },
-          onResponse: (Response response, ResponseInterceptorHandler handler) {
-            return handler.next(response);
-          },
-          onError: (DioError e, ErrorInterceptorHandler handler) {
-            return handler.next(e);
-          },
-        ),
-      );
     }
+
+    _http.interceptors.add(
+      InterceptorsWrapper(
+        onRequest: (RequestOptions options, RequestInterceptorHandler handler) {
+          return handler.next(options);
+        },
+        onResponse: (Response response, ResponseInterceptorHandler handler) {
+          return handler.next(response);
+        },
+        onError: (DioError e, ErrorInterceptorHandler handler) {
+          return handler.next(e);
+        },
+      ),
+    );
   }
 
   @override
